@@ -1,0 +1,18 @@
+body {
+    background-image: url('img/MAR_FONDO.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white; 
+}
+
+.bg-cover {
+    position: relative;
+}
+
+.navbar {
+    z-index: 10; 
+}
+
+.text-center {
+    padding: 50px 0; 
+}
