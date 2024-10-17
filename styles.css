@@ -1,18 +1,47 @@
-body {
-    background-image: url('img/MAR_FONDO.jpg'); 
-    background-size: cover;
-    background-position: center;
-    color: white; 
-}
+
 
 .bg-cover {
     position: relative;
 }
 
-.navbar {
-    z-index: 10; 
+
+/* Asegura que el texto del menú esté siempre centrado y sea visible */
+.nav-link {
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
 }
 
-.text-center {
-    padding: 50px 0; 
+/* Estilo para que el título sea visible sobre el fondo */
+h1 {
+    margin-top: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
+
+/* Estilo general del contenido */
+#contenido h1 {
+    margin-top: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+#contenido p {
+    color: #ddd;
+}
+
+body {
+    background-color: #1a1a1a;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+    z-index: 10; 
+
+}
+
