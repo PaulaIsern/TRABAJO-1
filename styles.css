@@ -1,16 +1,16 @@
-/* Fondo oscuro */
+
 body {
     background-color: #1a1a1a;
     height: 100vh;
     margin: 0;
 }
 
-/* Alinear el botón hamburguesa en la esquina superior derecha */
+/* botón hamburguesa  derecha */
 .navbar {
     position: absolute;
     top: 0;
     right: 0;
-    width: 100%; /* Asegura que ocupe todo el ancho al abrirse */
+    width: 100%; 
 }
 
 /* Botón hamburguesa */
@@ -18,7 +18,7 @@ body {
     margin-right: 1rem;
 }
 
-/* Estilo de los enlaces del menú */
+/* menú */
 .nav-link {
     font-size: 1.2rem;
     color: #fff;
@@ -26,18 +26,18 @@ body {
 }
 
 
-/* Distribuir enlaces en horizontal con espaciado uniforme */
+/* Menu en horizontal*/
 .collapse .navbar-nav {
-    flex-wrap: nowrap; /* Evita que se alineen en columnas */
+    flex-wrap: nowrap; 
 }
 
-/* Cambiar el fondo al pasar el ratón por las palabras */
+/* Hover*/
 .hoverable {
     transition: background-color 0.3s ease;
 }
 
 
-/* Encabezado centrado */
+/* Header centrado */
 header p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }

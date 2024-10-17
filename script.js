@@ -1,7 +1,7 @@
-// Seleccionar todos los enlaces con la clase 'hover-link'
+// HOVER 
 const hoverLinks = document.querySelectorAll('.hover-link');
 
-// Cambiar el color del fondo al hacer hover
+// Cambiar el color del fondo 
 hoverLinks.forEach(link => {
     link.addEventListener('mouseover', () => {
         const newBgColor = link.getAttribute('data-bg');
