@@ -26,7 +26,6 @@ body {
 }
 
 
-/* Menu en horizontal*/
 .collapse .navbar-nav {
     flex-wrap: nowrap; 
 }
