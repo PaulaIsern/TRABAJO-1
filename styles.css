@@ -1,47 +1,43 @@
-
-
-.bg-cover {
-    position: relative;
-}
-
-
-/* Asegura que el texto del menú esté siempre centrado y sea visible */
-.nav-link {
-    font-size: 1.2rem;
-    transition: color 0.3s ease-in-out;
-}
-
-/* Estilo para que el título sea visible sobre el fondo */
-h1 {
-    margin-top: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-
-/* Estilo general del contenido */
-#contenido h1 {
-    margin-top: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    color: #fff;
-}
-
-#contenido p {
-    color: #ddd;
-}
-
+/* Fondo oscuro */
 body {
     background-color: #1a1a1a;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
 }
 
-.navbar-nav .nav-link {
+/* Alinear el botón hamburguesa en la esquina superior derecha */
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho al abrirse */
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+    margin-right: 1rem;
+}
+
+/* Estilo de los enlaces del menú */
+.nav-link {
     font-size: 1.2rem;
-    transition: color 0.3s ease-in-out;
-    z-index: 10; 
-
+    color: #fff;
+    transition: color 0.3s ease;
 }
 
+
+/* Distribuir enlaces en horizontal con espaciado uniforme */
+.collapse .navbar-nav {
+    flex-wrap: nowrap; /* Evita que se alineen en columnas */
+}
+
+/* Cambiar el fondo al pasar el ratón por las palabras */
+.hoverable {
+    transition: background-color 0.3s ease;
+}
+
+
+/* Encabezado centrado */
+header p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
