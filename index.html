@@ -13,57 +13,79 @@
 
 <body>
 
-<header>
-    <!-- MENÚ HAMBURGUESA -->
-
-    <nav class="navbar navbar-light bg-transparent">
-        <div class="container-fluid justify-content-end" style="min-height: 60vh;">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav w-100 d-flex justify-content-around text-center flex-row">
-                    <li class="historia">
-                        <a class="nav-link text-white hover-link" href="#historia" 
-                           >Nuestra historia</a>
-                    </li>
-                    <li class="patagonia">
-                        <a class="nav-link text-white hover-link" href="#patagonia" 
-                          >x Patagonia</a>
-                    </li>
-                    <li class="mar">
-                        <a class="nav-link text-white hover-link" href="#mar" 
-                          >Salvemos el mar</a>
-                    </li>
-                    <li class="colabora">
-                        <a class="nav-link text-white hover-link" href="#colabora" 
-                           >Colabora</a>
-                    </li>
-                </ul>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menú Desplegable</title>
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css"> 
+        <style>
+            /* Estilo adicional para mantener el menú en la esquina superior derecha */
+            .navbar {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1000;
+            }
+            .navbar-toggler {
+                margin-right: 1rem; /* Espacio a la derecha del botón */
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+    <header>
+        <!-- MENÚ HAMBURGUESA -->
+        <nav class="navbar navbar-light bg-transparent">
+            <div class="container-fluid justify-content-end">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 d-flex justify-content-around text-center flex-row">
+                        <li class="historia">
+                            <a class="nav-link text-white hover-link" href="#historia">Nuestra historia</a>
+                        </li>
+                        <li class="patagonia">
+                            <a class="nav-link text-white hover-link" href="#patagonia">x Patagonia</a>
+                        </li>
+                        <li class="mar">
+                            <a class="nav-link text-white hover-link" href="#mar">Salvemos el mar</a>
+                        </li>
+                        <li class="colabora">
+                            <a class="nav-link text-white hover-link" href="#colabora">Colabora</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-
-
-
-
-    <div class="container overflow-hidden text-center mt-5">
-
-        <div class="row g-0 text-center hoverable d-flex justify-content-center align-items-center" style="min-height: 20vh;">
-
+        </nav>
+    
+        <div class="container overflow-hidden text-center mt-5">
+            <div class="row g-0 text-center hoverable d-flex justify-content-center align-items-center" style="min-height: 20vh;">
                 <div class="p-3 nav-link text-white col-sm-6 col-md-8 hover-link" data-bg="img/FONDO2.jpg" href="#historia">Nuestra historia</div>
                 <div class="p-3 nav-link text-white col-6 col-md-4 hover-link" data-bg="img/FONDO1.jpg" href="#patagonia">Productos</div>
                 <div class="nav-link text-white col-6 col-md-4 hover-link" data-bg="img/MAR_FONDO.jpg" href="#mar">Salvemos el mar</div>
                 <div class="nav-link text-white col-sm-6 col-md-8 hover-link" data-bg="img/FOTO_HOVER.jpg" href="#colabora">Colabora</div>
-             </div>
-    </div>
-
+            </div>
+        </div>
+        <p class="text-center mt-4 display-1 fw-bold text-white">DEIÀ</p> 
     </header>
+    
+    <!-- Bootstrap JS (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+    
 
-
-    <p class="text-center mt-4 display-1 fw-bold text-white">DEIÀ</p> 
 
 <!-- Sección de Historia -->
 

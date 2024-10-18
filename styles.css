@@ -39,3 +39,14 @@ body {
 header p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
+/* Informacion */
+.h2, h2 {
+    font-size: 2rem;
+    margin: 400px 0px 16px;
+}
+
+h2.text-white {
+    text-align: center;
+
+}
