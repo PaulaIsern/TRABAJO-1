@@ -13,7 +13,6 @@ body {
     width: 100%; 
 }
 
-/* Botón hamburguesa */
 .navbar-toggler {
     margin-right: 1rem;
 }
@@ -31,8 +30,8 @@ body {
 }
 
 /* Hover*/
-.hoverable {
-    transition: background-color 0.3s ease;
+.navbarNav {
+    transition: background-img url(img/FOTO_HOVER.jpg);
 }
 
 
@@ -40,11 +39,3 @@ body {
 header p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
-
-/* Nuestra historia */
-h2.text-white {
-    text-align: center;
-    margin: 40px 0px 16px;
-}
-
