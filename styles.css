@@ -1,46 +1,53 @@
-
 body {
     background-color: #1a1a1a;
     height: 100vh;
     margin: 0;
 }
 
-/* botón hamburguesa  derecha */
+/* botón hamburguesa derecha */
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100%; 
+    z-index: 1000;
 }
 
-.navbar-toggler {
-    margin-right: 1rem;
+/* Ajustes del menú */
+.navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro para el menú */
+    position: fixed; /* Fija el menú en la parte superior */
+    top: 56px; /* Distancia desde la parte superior (ajustar según tu navbar) */
+    left: 0; /* Alinea a la izquierda */
+    right: 0; /* Alinea a la derecha */
+    height: calc(100vh - 56px); /* Ocupa toda la altura disponible */
+    overflow-y: auto; /* Permite desplazamiento vertical si es necesario */
 }
 
-/* menú */
+.navbar-nav {
+    flex-direction: column; /* Alinea los enlaces en columnas */
+    height: 100%; /* Asegura que ocupe toda la altura */
+    margin-left: 50px; 
+    justify-content: center; /* Centra los enlaces verticalmente */
+}
+
 .nav-link {
-    font-size: 1.2rem;
-    color: #fff;
-    transition: color 0.3s ease;
+    padding: 15px 20px; /* Ajusta el espacio alrededor de cada enlace */
+    font-size: 1.5rem; /* Aumenta el tamaño de fuente para mejor visibilidad */
+    transition: 0.2s ease;
 }
-
-
-.collapse .navbar-nav {
-    flex-wrap: nowrap; 
-}
-
-/* Hover*/
-.navbarNav {
-    transition: background-img url(img/FOTO_HOVER.jpg);
-}
-
 
 /* Header centrado */
 header p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Informacion */
+.text-center {
+    text-align: center !important;
+    margin: 90px 100px 50px;
+}
+
+/* Información */
 .h2, h2 {
     font-size: 2rem;
     margin: 400px 0px 16px;
@@ -48,5 +55,10 @@ header p {
 
 h2.text-white {
     text-align: center;
+}
 
+/* LOGO DEIA */
+.text-logo {
+    margin-top: 0; 
+    margin-bottom: 10px; 
 }

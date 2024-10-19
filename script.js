@@ -12,3 +12,12 @@ hoverLinks.forEach(link => {
         document.body.style.backgroundColor = '#1a1a1a';
     });
 });
+
+// MENU
+$(document).ready(function () {
+    // Cierra el menú al hacer clic en un enlace
+    $('.navbar-nav a').on('click', function () {
+        $('.navbar-collapse').collapse('hide');
+    });
+});
+
