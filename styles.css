@@ -62,3 +62,9 @@ h2.text-white {
     margin-top: 0; 
     margin-bottom: 10px; 
 }
+
+.scroll1{
+    margin-top: 2rem;
+    margin: 0 auto;
+    width: 20%;
+}
