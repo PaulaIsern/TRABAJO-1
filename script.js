@@ -1,19 +1,3 @@
-// 
-// const hoverLinks = document.querySelectorAll('.hover-link');
-
-// hoverLinks.forEach(link => {
-//     link.addEventListener('mouseover', () => {
-//         const newImg= link.getAttribute('data-bg');
-//         document.body.style.backgroundImage = 'url(' + newImg + ')';
-//     });
-
-//     link.addEventListener('mouseout', () => {
-//         document.body.style.backgroundColor = '#1a1a1a';
-//     });
-// });
-//
-
-
 document.querySelectorAll('.hover-link').forEach((item) => {
     item.addEventListener('mouseenter', () => {
         const header = document.querySelector('.custom-header');
