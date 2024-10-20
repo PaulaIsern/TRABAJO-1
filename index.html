@@ -16,122 +16,98 @@
 
 <body>
     
-    <header>
-        <!-- MENÚ HAMBURGUESA -->
-        <nav class="navbar navbar-light bg-transparent fixed-top">
-            <div class="container-fluid justify-content-end">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav w-100">
-                        <li class="nav-item">
-                            <a class="nav-link text-white hover-link" href="#historia">Nuestra historia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white hover-link" href="#patagonia">x Patagonia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white hover-link" href="#mar">Salvemos el mar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white hover-link" href="#colabora">Colabora</a>
-                        </li>
-                    </ul>
-                </div>
+  <header class="custom-header">
+    <nav class="navbar navbar-light bg-transparent fixed-top">
+        <div class="container-fluid justify-content-end">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a class="nav-link text-white hover-link" href="#historia">Nuestra historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white hover-link" href="#patagonia">x Patagonia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white hover-link" href="#mar">Salvemos el mar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white hover-link" href="#colabora">Colabora</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        
-        <div class="container overflow-hidden text-center mt-5">
-            <div class="row g-0 text-center hoverable d-flex justify-content-center align-items-center" style="min-height: 20vh;">
-                <div class="p-3 nav-link text-white col-sm-6 col-md-8 hover-link" data-bg="img/FONDO2.jpg" href="#historia">
-                    <span class="font-weight-thin" style="font-size: 1.5rem;">NUESTRA HISTORIA</span>
-                </div>
-                <div class="p-3 nav-link text-white col-6 col-md-4 hover-link" data-bg="img/FONDO1.jpg" href="#patagonia">
-                    <span class="font-weight-thin" style="font-size: 1.5rem;">PRODUCTOS</span>
-                </div>
-                
-                <div class="nav-link text-white col-3 col-md-4 hover-link" data-bg="img/MAR_FONDO.jpg" href="#mar">
-                    <span class="font-weight-thin" style="font-size: 1.5rem;">SALVEMOS EL MAR</span>
-                </div>
-                <div class="nav-link text-white col-sm-3 col-md-8 hover-link" data-bg="img/FOTO_HOVER.jpg" href="#colabora">
-                    <span class="font-weight-thin" style="font-size: 1.5rem;">COLABORA</span>
-                </div>
-                <div class="p-3 nav-link text-white col-3 col-md-4 hover-link" data-bg="img/FONDO1.jpg" href="#patagonia">
-                    <span class="font-weight-thin" style="font-size: 1.5rem;">PRODUCTOS</span>
-                </div>
-                
+        </div>
+    </nav>
+
+    <div class="container overflow-hidden text-center mt-5">
+        <div class="row g-0 hoverable justify-content-center align-items-center" style="min-height: 20vh;">
+            <div class="p-3 hover-link col-sm-6 col-md-8" data-bg="img/FONDO2.jpg">
+                <span class="font-weight-thin" style="font-size: 1.5rem;">NUESTRA HISTORIA</span>
             </div>
-            <p class="text-center mt-4 display-1 fw-bold text-white">DEIÀ</p>
+            <div class="p-3 hover-link col-6 col-md-4" data-bg="img/FONDO1.jpg">
+                <span class="font-weight-thin" style="font-size: 1.5rem;">PRODUCTOS</span>
+            </div>
+            <div class="hover-link col-3 col-md-4" data-bg="img/MAR_FONDO.jpg">
+                <span class="font-weight-thin" style="font-size: 1.5rem;">SALVEMOS EL MAR</span>
+            </div>
+            <div class="hover-link col-sm-3 col-md-8" data-bg="img/FOTO_HOVER.jpg">
+                <span class="font-weight-thin" style="font-size: 1.5rem;">COLABORA</span>
+            </div>
         </div>
 
-        <!-- Reemplazamos el texto con el logo -->
         <div class="text-logo text-center mt-1">
             <img src="img/logos deia color-05 2.png" alt="Logo DEIÀ" class="img-fluid" style="max-width: 40%;">
         </div>
-    </header>
-    
-    <!-- Sección de Historia -->
-    <div class="container"> 
-        <section id="historia" class="container mt-5">
-            <h2 class="text-white"> Nuestra Historia</h2>
-            <p class="text-white">
-                Desde nuestros inicios, hemos estado comprometidos con la preservación de nuestro entorno y la promoción de una vida sostenible. Nuestra historia comienza en un pequeño pueblo, donde la conexión con la naturaleza nos enseñó la importancia de cuidar nuestro hogar. A través de los años, hemos trabajado incansablemente para crear conciencia y fomentar prácticas que protejan nuestro planeta.
-            </p>
-    
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <img src="https://picsum.photos/200" class="img-fluid" alt="...">
-                </div>
-                <div class="col-md-6">
-                    <p class="text-white">
-                        A medida que crecimos, expandimos nuestras iniciativas, abriendo programas educativos y colaboraciones con comunidades locales. Creemos que cada pequeño esfuerzo cuenta y que juntos podemos hacer una diferencia significativa. La historia de nuestro compromiso con el medio ambiente continúa, y te invitamos a ser parte de ella.
-                    </p>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <img src="https://picsum.photos/200" class="img-fluid" alt="...">
-                </div>
-                <div class="col-md-6">
-                    <p class="text-white">
-                        A medida que crecimos, expandimos nuestras iniciativas, abriendo programas educativos y colaboraciones con comunidades locales. Creemos que cada pequeño esfuerzo cuenta y que juntos podemos hacer una diferencia significativa. La historia de nuestro compromiso con el medio ambiente continúa, y te invitamos a ser parte de ella.
-                    </p>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <img src="https://picsum.photos/200" class="img-fluid" alt="...">
-                </div>
-                <div class="col-md-6">
-                    <p class="text-white">
-                        A medida que crecimos, expandimos nuestras iniciativas, abriendo programas educativos y colaboraciones con comunidades locales. Creemos que cada pequeño esfuerzo cuenta y que juntos podemos hacer una diferencia significativa. La historia de nuestro compromiso con el medio ambiente continúa, y te invitamos a ser parte de ella.
-                    </p>
-                </div>
-            </div>
-        </section>
     </div>
+</header>
 
 
 
 
+<div class="video-container">
+  <video autoplay muted loop class="video-bg">
+      <source src="img/VIDEOHEADER.mp4" type="video/mp4">
+      Un tributo a nuestra isla madre
+  </video>
 
-
-    <div class="Scroll1">
-      <div class="container text-right">
-            <div class="col align-self-end">
-              <div class="col-1"></div>
-              <img src="img/Bikini colgando.jpg">
-            </div>
-          </div>
-        <div class="row justify-content">
-          <div class="col-1">
-              <img src="img/concha.jpg">
-        </div>
-        </div>
+  <div class="overlay d-flex justify-content-center align-items-center">
+      <h1 class="text-white text-center display-4">Un tributo a nuestra isla madre</h1>
   </div>
+</div>
+
+
+
+
+
+
+
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 position-relative">
+            <img src="img/sustain.jpg" class="img-fluid" alt="Bikini colgando">
+            <h1 class="overlay-text display-1 text-white font-weight-bold position-absolute top -0 start-50 translate-middle text-end"> <!-- Texto superpuesto alineado a la derecha -->
+                Colaborando con ECONYL reciclamos basura rescatada del mar para darles una segunda vida.
+            </h1>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row justify-content mt-2">
+      <div class="col-12 position-relative"> 
+          <img src="img/ECONYL.webp" class="img-fluid w-100" alt="Descripción de la imagen">
+
+          <h1 class="overlay-text display-1 text-white font-weight-bold position-absolute top-50 start-50 translate-middle text-center">
+              Preservamos el planeta con nuestros bikinis ECO.
+          </h1>
+      </div>
+  </div>
+</div>
+
       
   <div class="row">
       <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
@@ -179,7 +155,7 @@
 
     
 
-    
+
 
     <!-- Bootstrap JS, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

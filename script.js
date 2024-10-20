@@ -1,17 +1,34 @@
-// HOVER 
-const hoverLinks = document.querySelectorAll('.hover-link');
+// 
+// const hoverLinks = document.querySelectorAll('.hover-link');
 
-// Cambiar el color del fondo 
-hoverLinks.forEach(link => {
-    link.addEventListener('mouseover', () => {
-        const newImg= link.getAttribute('data-bg');
-        document.body.style.backgroundImage = 'url(' + newImg + ')';
+// hoverLinks.forEach(link => {
+//     link.addEventListener('mouseover', () => {
+//         const newImg= link.getAttribute('data-bg');
+//         document.body.style.backgroundImage = 'url(' + newImg + ')';
+//     });
+
+//     link.addEventListener('mouseout', () => {
+//         document.body.style.backgroundColor = '#1a1a1a';
+//     });
+// });
+//
+
+
+document.querySelectorAll('.hover-link').forEach((item) => {
+    item.addEventListener('mouseenter', () => {
+        const header = document.querySelector('.custom-header');
+        const bgImage = item.getAttribute('data-bg');
+        header.style.backgroundImage = `url(${bgImage})`;
     });
 
-    link.addEventListener('mouseout', () => {
-        document.body.style.backgroundColor = '#1a1a1a';
+    item.addEventListener('mouseleave', () => {
+        const header = document.querySelector('.custom-header');
+        header.style.backgroundImage = 'none'; // Vuelve al estado inicial
     });
 });
+
+
+
 
 // MENU
 $(document).ready(function () {
