@@ -2,6 +2,9 @@ body {
    
     height: 100vh;
     margin: 0;
+    font-family: 'Afacad Flux', sans-serif;
+    color: #d3e4f5;
+    
 }
 
 .h2, h2 {
@@ -74,12 +77,26 @@ h2.text-white {
 .overlay-text {
     position: absolute;
     top: 50%; 
-    left: 10%; 
+    left: 1%; 
     transform: translateY(-50%);
-    color: white;
-    font-size: 4rem;
+    color: #d3e4f5 !important;
+    font-size: 4.5rem;
     font-weight: bold;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    /* text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); */
     z-index: 2;
+    
 }
 
+.texto-colaboracion {
+    color: #3c4f99; /* Cambia este color al que prefieras */
+    font-size: 3.5rem; /* Tamaño de texto más pequeño */
+    text-align: right; /* Alinear el texto a la derecha */
+}
+
+.bg-primary {
+    background-color: #d3e4f5 !important;
+}
+
+.texto-negrita{
+    font-weight: bold;
+}
