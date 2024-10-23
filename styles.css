@@ -40,6 +40,45 @@ h2.text-white {
     background-position: center;
 }
 
+.sub-menu {
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: -210px; /* Ocultar el menú inicialmente */
+    width: 210px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: left 0.3s ease;
+    z-index: 1;
+}
+
+.sub-menu.oppenned {
+    left: 0; /* Muestra el menú cuando está activo */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+}
+
+
+
+a {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    padding: 15px; /* Espaciado para los enlaces */
+    text-transform: uppercase;
+    transition: font-weight 0.3s;
+}
+
+a:hover {
+    font-weight: bold;
+}
 
 /* Header ocupa todo el viewport */
 .custom-header {
@@ -50,6 +89,13 @@ h2.text-white {
     background-repeat: no-repeat; 
     transition: background-image 0.5s ease; 
 }
+
+
+.navbar-toggler {
+    margin-left: 0 !important;
+  }
+  
+
 
 /* Hoverable */
 .hoverable {
@@ -88,13 +134,13 @@ h2.text-white {
 }
 
 .texto-colaboracion {
-    color: #3c4f99; /* Cambia este color al que prefieras */
+    color: #fbfbfb; /* Cambia este color al que prefieras */
     font-size: 3.5rem; /* Tamaño de texto más pequeño */
     text-align: right; /* Alinear el texto a la derecha */
 }
 
 .bg-primary {
-    background-color: #d3e4f5 !important;
+    background-color: #113558 !important;
 }
 
 .texto-negrita{
@@ -104,7 +150,6 @@ h2.text-white {
 
 /* Wave effect */
 .d-flex.flex-column.justify-content-center.align-items-center.vh-100.position-relative {
-    background-color: #3c4f99;
     overflow: hidden; 
     position: relative;
 }
@@ -114,4 +159,99 @@ h2.text-white {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+
+
+/* ESTILOS TRANSICION  NUMEROS  */
+
+
+.icono-metric {
+    max-width: 80px; /* Ajustar el tamaño de los iconos */
+}
+
+
+.bg-light {
+    background-color: #2861a8; /* Azul claro para el fondo general */
+}
+
+.container mt-5 {
+    background-color: #003366; /* Azul marino para el fondo interno */
+    color: white; /* Color del texto en el fondo azul marino */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+
+
+
+
+/* TIRA DE COLABROADORES 
+ */
+ .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 10s linear infinite; /* Ajustar la velocidad aquí */
+}
+
+.marquee-item {
+    display: inline-block;
+    padding: 0 15px; /* Espaciado entre logos */
+}
+
+.theme-img {
+    max-height: 40px; /* Ajustar el tamaño de las imágenes */
+    vertical-align: middle;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); } /* Comienza desde el 0% */
+    100% { transform: translateX(-50%); } /* Mueve hasta el 50% para el efecto continuo */
+}
+
+
+/* CSS GALERIA  */
+
+.position-relative {
+    overflow: hidden; /* Para que la superposición no se salga del contenedor */
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s; /* Transición suave al hacer hover */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    color: white;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    opacity: 0; /* Comienza oculto */
+    transition: opacity 0.3s; /* Transición suave de la opacidad */
+}
+
+.position-relative:hover .overlay {
+    opacity: 1; /* Muestra la superposición al hacer hover */
+}
+
+.position-relative:hover .gallery-img {
+    transform: scale(1.05); /* Escala la imagen un poco al hacer hover */
+}
+
+.text {
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    text-align: center; /* Centra el texto */
 }
