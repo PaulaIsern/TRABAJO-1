@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -64,7 +66,41 @@
         <div class="text-logo text-center mt-1">
             <img src="img/logos deia color-05 2.png" alt="Logo DEIÀ" class="img-fluid" style="max-width: 40%;">
         </div>
+      </div>
+      
+      <nav class="navbar navbar-dark fixed-top">
+        <button class="navbar-toggler border-0 ml-0" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="img/ICONO MENU.png" alt="Custom Icon" style="width:50px; height:30px;">
+        </button>
+      </nav>
     </div>
+    
+    
+  
+
+
+    <div class="container overflow-hidden text-center d-none d-md-block" id="contentToHide">
+      <div class="row g-0 hoverable justify-content-center align-items-center" style="min-height: 20vh;">
+          <div class="p-3 hover-link col-sm-6 col-md-8" data-bg="img/collage1.webp">
+              <span class="font-weight-thin" style="font-size: 1.5rem;">NUESTRA HISTORIA</span>
+          </div>
+          <div class="p-3 hover-link col-6 col-md-4" data-bg="img/collage4.webp">
+              <span class="font-weight-thin" style="font-size: 1.5rem;">PRODUCTOS</span>
+          </div>
+          <div class="hover-link col-3 col-md-4" data-bg="img/collage2.webp">
+            <button type="button" class="btn mb-2">Productos</button>
+              <a href="nuevapagina.html" class="font-weight-thin" style="font-size: 1.5rem;">CREA TU BIKINI</a>
+          </div>
+          <div class="hover-link col-sm-3 col-md-8" data-bg="img/collage3.webp">
+              <span class="font-weight-thin" style="font-size: 1.5rem;">COLABORA</span>
+          </div>
+      </div>
+  
+      <div class="text-logo text-center mt-1">
+          <img src="img/logos deia color-05 2.png" alt="Logo DEIÀ" class="img-fluid" style="max-width: 40%;">
+      </div>
+  </div>
+  
 
 <div class="video-container">
   <video autoplay muted loop class="video-bg">
@@ -74,97 +110,376 @@
 
 </header>
 
-<div class="d-flex flex-column justify-content-center align-items-center vh-100 position-relative">
-  <div class="text-center p-5">
-    <p class="display-1 texto-negrita font-weight-bold" style="font-size: 9vw;">UN TRIBUTO A NUESTRA ISLA MADRE</p>
-  </div>
 
-  <div class="wave" style="height: 150px; overflow: hidden; position: absolute; bottom: 0; left: 0; right: 0;">
-    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-      <path d="M-0.84,-1.47 C302.76,130.75 207.95,82.39 525.11,-6.41 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path>
-    </svg>
-  </div>
-</div>
+<!-- PRUEBA DE FADE ANIMACION  -->
 
-  <div class="container mt-5">
-    <div class="row">
-        <div class="col-md-6 position-relative ">
-            <img src="img/sustain.jpg" class="img-fluid" alt="Bikini colgando" class="img-fluid">
-          </div>
-          <div class="col-md-6 texto-colaboracion font-weight-bold text-end badge bg-primary text-wrap " >
-            Colaborando con ECONYL reciclamos basura rescatada del mar para darles una segunda vida.
-        </div>
-            <!-- <h1 class="overlay-text1 display-1 text-white font-weight-bold position-absolute top -0 start-50 translate-middle text-end"> <!Texto superpuesto alineado a la derecha -->
-                <!-- Colaborando con ECONYL reciclamos basura rescatada del mar para darles una segunda vida. --> 
-            </h1>
-        </div>
+
+<!-- FIN PRUEBA   -->
+
+
+
+
+
+<div class="d-flex flex-column justify-content-center align-items-center vh-100 position-relative" style="min-height: 80vh;"> <!-- Mantiene vh-100 -->
+  
+  <!-- Texto animado -->
+  <div class="row w-100">
+    <div class="col-md-12 text-center" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="200">
+        <h2 class="display-4">La historia de Deiá,</h2>
+        <p class="lead texto-negrita font-weight-bold" style="font-size: 6vw;">UN TRIBUTO A NUESTRA ISLA MADRE</p>
     </div>
+  </div>
 </div>
+
+
 
 <div class="container mt-5">
-  <div class="row justify-content mt-2">
-      <div class="col-12 position-relative"> 
-          <img src="img/ECONYL.azul.png" class="img-fluid w-100" alt="Descripción de la imagen">
-
-          <h1 class="overlay-text display-1 text-white font-weight-bold position-absolute top-40 start-40 translate-middle text-center">
-              Preservamos el planeta con nuestros bikinis ECO.
-          </h1>
+  <div class="row">
+      <div class="col-md-6 position-relative" data-aos="fade-right">
+          <img src="img/ANIMACION1.webp" class="img-fluid" alt="Bikini colgando">
       </div>
   </div>
 </div>
 
-      
+
+
+<div class="container mt-5">
   <div class="row">
-      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-        <img
-          src="img/galeria4.jpeg"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Boat on Calm Water"
-        />
-    
-        <img
-          src="img/galeria2.jpg"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Wintry Mountain Landscape"
-        />
+      <div class="col-md-6 d-flex align-items-center justify-content-center texto-colaboracion font-weight-bold text-center text-wrap" style="font-size: 3vw;" data-aos="fade-right">
+          Colaborando con ECONYL reciclamos basura rescatada del mar para darles una segunda vida.
       </div>
-    
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <img
-          src="img/Bikini colgando.jpg"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Mountains in the Clouds"
-        />
-    
-        <img
-          src="img/concha.jpg"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Boat on Calm Water"
-        />
+      <div class="col-md-6 position-relative d-flex align-items-center" data-aos="fade-left">
+          <img src="img/ANIMACION2.webp" class="img-fluid" alt="Bikini colgando">
       </div>
-    
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <img
-          src="img/galeria3.jpeg"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Waves at Sea"
-        />
-    
-        <img
-          src="img/galeria1.jpeg"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Yosemite National Park"
-        />
+  </div>
+</div>
+
+
+
+
+
+ <!-- Texto animado separado -->
+ <div class="row mt-5 justify-content-center">
+  <div class="col-md-10 col-lg-8">
+    <p class="text-center display-2 fw-bold fst-italic" style="font-size: 3vw;" data-aos="fade-up">
+      "Mirando hacia atrás en los últimos diez años, la evolución de Deia ha sido una de empoderamiento. Muchas cosas han cambiado, pero los valores fundamentales de sostenibilidad, inclusión y comunidad de Deia siguen siendo los mismos."
+    </p>
+  </div>
+</div>
+
+
+
+<!-- ANIMACION DE NUMEROS  -->
+
+<div class="container mt-5">
+  <div class="row text-center bg-light p-4" style="border-radius: 10px; background-color: #e0f7fa;">
+    <!-- Métrica 1 -->
+    <div class="col-md-3">
+      <img src="https://gsstatic.greenstory.ca/asset-lib/vitamina/GS-Black-Water.png" class="icono-metric" alt="Water saved">
+      <h3 class="counter" data-target="4641260">1357</h3>
+      <p>Litros de agua ahorrados</p>
+    </div>
+    <!-- Métrica 2 -->
+    <div class="col-md-3">
+      <img src="https://gsstatic.greenstory.ca/asset-lib/vitamina/GS-Black_Waste.png" class="icono-metric" alt="Waste diverted">
+      <h3 class="counter" data-target="39982">7853</h3>
+      <p>Kilogramos de residuos desviados</p>
+    </div>
+    <!-- Métrica 3 -->
+    <div class="col-md-3">
+      <img src="https://gsstatic.greenstory.ca/asset-lib/vitamina/GS-Black_Emissions.png" class="icono-metric" alt="Emissions avoided">
+      <h3 class="counter" data-target="413730">8795</h3>
+      <p>Kg de emisiones evitadas</p>
+    </div>
+    <!-- Métrica 4 -->
+    <div class="col-md-3">
+      <img src="https://gsstatic.greenstory.ca/asset-lib/vitamina/GS-Black_Energy.png" class="icono-metric" alt="Energy saved">
+      <h3 class="counter" data-target="1300807">56784</h3>
+      <p>KWh de energía ahorrados</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- FIN ANIMACION DE NUMEROS  -->
+
+
+
+
+<!-- CARRUSSEL -->
+
+
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="img/CARRUSEL1.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="img/CARRUSSEL2.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/CARRUSSEL3.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!-- FIN CARRUSSEL  -->
+
+
+<!-- GALERIA DE IMAGENES  -->
+
+
+<div class="container my-5">
+  <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <div class="position-relative">
+              <img src="img/galeria4.jpeg" class="gallery-img shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+              <div class="overlay">
+                  <div class="text">HOLAAA</div>
+              </div>
+          </div>
+          <div class="position-relative">
+              <img src="img/galeria2.jpg" class="gallery-img shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+              <div class="overlay">
+                  <div class="text">Información de la Imagen 2</div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="position-relative">
+              <img src="img/Bikini colgando.jpg" class="gallery-img shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+              <div class="overlay">
+                  <div class="text">Información de la Imagen 3</div>
+              </div>
+          </div>
+          <div class="position-relative">
+              <img src="img/concha.jpg" class="gallery-img shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+              <div class="overlay">
+                  <div class="text">Información de la Imagen 4</div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="position-relative">
+              <img src="img/galeria3.jpeg" class="gallery-img shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+              <div class="overlay">
+                  <div class="text">Información de la Imagen 5</div>
+              </div>
+          </div>
+          <div class="position-relative">
+              <img src="img/galeria1.jpeg" class="gallery-img shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+              <div class="overlay">
+                  <div class="text">Información de la Imagen 6</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
 
     
+<!-- TIRA DE COLABORADORES  -->
+
+
+<div class="container mt-5">
+  <div class="marquee" role="marquee">
+      <span class="marquee-content">
+          <span class="marquee-item marquee-text">As seen in</span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO1.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO2.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO3.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO4.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO5.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO6.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO7.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO8.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO9.png" alt="" class="theme-img">
+          </span>
+          <!-- Duplicamos los logos para una repetición continua -->
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO1.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO2.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO3.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO4.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO5.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO6.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO7.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO8.png" alt="" class="theme-img">
+          </span>
+          <span class="marquee-item marquee-image">
+              <img src="img/LOGO9.png" alt="" class="theme-img">
+          </span>
+      </span>
+  </div>
+</div>
+
+
+
+<!-- FIN TIRA  -->
+
+<!-- FOOTER -->
+<!-- 
+<footer style="width: 100%; padding: 40px 0; background-color: #f8f9fa;">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 d-flex flex-column align-items-center justify-content-center texto-colaboracion font-weight-bold text-center" style="font-size: 1.5vw; color: navy;">
+        <p style="margin: 10px 0;">Phone: +34 917911370</p>
+        <p style="margin: 10px 0;">Email: burningman@gmail.com</p>
+        <p style="margin: 10px 0;">Black Rock Desert, Nevada</p>
+        <p style="margin: 10px 0;">Privacy Policy</p>
+        <p style="margin: 10px 0;">Terms and Conditions</p>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+
+    
+
+
+
+<footer id="site-footer" role="contentinfo" class="bg-light mt-6">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap">
+        <div class="col-md-3">
+          <p class="title mt-4">Quiénes somos</p>
+          <p><a itemprop="url" title="Manifiesto" href="/es/manifesto/" class="footer-link">Manifiesto</a></p>
+          <p><a itemprop="url" title="Condiciones de uso" href="/es/terms-and-conditions/" class="footer-link">Términos y condiciones</a></p>
+          <p><a itemprop="url" title="Política de privacidad" href="/es/legal/" class="footer-link">Política de privacidad</a></p>
+        </div>
+        <div class="col-md-3">
+          <p class="title mt-4">Cómo comprar</p>
+          <p><a itemprop="url" title="Preguntas frecuentes" href="/es/faqs/" class="footer-link">Preguntas frecuentes</a></p>
+          <p><a itemprop="url" title="Envíos y devoluciones" href="/es/shipping-and-returns/" class="footer-link">Envíos y devoluciones</a></p>
+          <p><a rel="noindex, nofollow" itemprop="url" title="Tabla de tallas" href="javascript:void(0);" onclick="openSizeChart();" class="footer-link">Tabla de tallas</a></p>
+        </div>
+        <div class="col-md-3">
+          <p class="title mt-4">Contáctanos</p>
+          <p><a rel="noindex, nofollow" title="Contáctanos" href="mailto:hello@nowthenlabel.com" class="footer-link">Atención al cliente</a></p>
+          <p><a rel="noindex, nofollow" href="javascript:void(0);" onclick="document.getElementById('telon_info_wholesale').style.display='inline'" class="footer-link">Wholesale</a></p>
+          <p><a rel="noindex, nofollow" title="Prensa y RRPP" href="mailto:press@nowthenlabel.com" class="footer-link">Prensa y RRPP</a></p>
+        </div>
+        <div class="col-md-3 d-flex align-items-center">
+          <div class="newsletter w-100">
+            <p>Suscríbete para descubrir nuevos lanzamientos y ofertas exclusivas. 10% de descuento en tu primera compra.</p>
+            <input class="btn btn-primary" type="button" value="UNIRME" onclick="document.getElementById('telon_form_popup_newsletter').style.display='inline'">
+          </div>
+          <p class="follow-us text-end">Síguenos</p>
+          <ul class="footer_socials_wrapper list-unstyled d-flex justify-content-end">
+            <li><a href="https://www.facebook.com/NowThenLabel" title="Follow us on Facebook" target="_blank" class="social_media"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/nowthenlabel/" title="Follow us on Instagram" target="_blank" class="social_media"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="mailto:hello@nowthenlabel.com" title="Send us an e-mail"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer-copyright-area mt-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="social_and_copyright_text">
+            <div class="copyright_text">
+              <a href="img/logos deia color-05 2.png" class="footer-link">DEIÁ</a> © 2024
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     <!-- Bootstrap JS, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="script.js"></script>
+    <!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script>
+    // Inicializar AOS
+    AOS.init({
+        duration: 1000, // Duración de la animación en milisegundos
+    });
+</script>
+
 </body>
 </html>
