@@ -161,6 +161,16 @@ a:hover {
     right: 0;
 }
 
+/* estilos primer texto deia  */
+
+.custom-height {
+    min-height: 80vh; /* Ajusta según necesites */
+}
+
+
+
+
+
 
 
 /* ESTILOS TRANSICION  NUMEROS  */
@@ -177,7 +187,7 @@ a:hover {
 
 .container mt-5 {
     background-color: #003366; /* Azul marino para el fondo interno */
-    color: white; /* Color del texto en el fondo azul marino */
+    color: rgb(255, 255, 255); /* Color del texto en el fondo azul marino */
     padding: 20px; /* Espaciado interno */
     border-radius: 10px; /* Bordes redondeados */
 }
@@ -255,3 +265,22 @@ a:hover {
     font-size: 1.2em; /* Ajusta el tamaño del texto */
     text-align: center; /* Centra el texto */
 }
+
+
+/* FOOTER  */
+
+.footer-link {
+    color: navy; /* Color azul marino */
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+  }
+  
+  .title {
+    color: navy; /* Color azul marino para títulos */
+    font-size: 1.5rem; /* Tamaño de fuente de los títulos */
+  }
+  

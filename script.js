@@ -102,3 +102,5 @@ counters.forEach(counter => {
 
   
 
+// FOOTER 
+
