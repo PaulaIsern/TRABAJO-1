@@ -43,7 +43,7 @@
   
 
 
-    <div class="container overflow-hidden text-center mt-5 d-none d-md-block" id="contentToHide">
+    <div class="container overflow-hidden text-center d-none d-md-block" id="contentToHide">
       <div class="row g-0 hoverable justify-content-center align-items-center" style="min-height: 20vh;">
           <div class="p-3 hover-link col-sm-6 col-md-8" data-bg="img/collage1.webp">
               <span class="font-weight-thin" style="font-size: 1.5rem;">NUESTRA HISTORIA</span>
@@ -84,17 +84,17 @@
 
 
 
-<div class="d-flex flex-column justify-content-center align-items-center vh-100 position-relative">
+<div class="d-flex flex-column justify-content-center align-items-center vh-100 position-relative" style="min-height: 80vh;"> <!-- Mantiene vh-100 -->
   
-
-   <!-- Texto animado -->
-   <div class="row mt-5">
-    <div class="col-md-12 text-center" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="200"> <!-- Aquí se ha añadido data-aos-offset -->
+  <!-- Texto animado -->
+  <div class="row w-100">
+    <div class="col-md-12 text-center" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="200">
         <h2 class="display-4">La historia de Deiá,</h2>
-        <p class="lead texto-negrita font-weight-bold" style="font-size: 7vw;">UN TRIBUTO A NUESTRA ISLA MADRE</p>
+        <p class="lead texto-negrita font-weight-bold" style="font-size: 6vw;">UN TRIBUTO A NUESTRA ISLA MADRE</p>
     </div>
+  </div>
 </div>
-</div>
+
 
 
 <div class="container mt-5">
@@ -109,7 +109,7 @@
 
 <div class="container mt-5">
   <div class="row">
-      <div class="col-md-6 d-flex align-items-center justify-content-center texto-colaboracion font-weight-bold text-center badge bg-primary text-wrap" style="font-size: 3vw;" data-aos="fade-right">
+      <div class="col-md-6 d-flex align-items-center justify-content-center texto-colaboracion font-weight-bold text-center text-wrap" style="font-size: 3vw;" data-aos="fade-right">
           Colaborando con ECONYL reciclamos basura rescatada del mar para darles una segunda vida.
       </div>
       <div class="col-md-6 position-relative d-flex align-items-center" data-aos="fade-left">
@@ -152,7 +152,7 @@
     <!-- Métrica 3 -->
     <div class="col-md-3">
       <img src="https://gsstatic.greenstory.ca/asset-lib/vitamina/GS-Black_Emissions.png" class="icono-metric" alt="Emissions avoided">
-      <h3 class="counter" data-target="413730">895</h3>
+      <h3 class="counter" data-target="413730">8795</h3>
       <p>Kg de emisiones evitadas</p>
     </div>
     <!-- Métrica 4 -->
@@ -229,7 +229,7 @@
           <div class="position-relative">
               <img src="img/galeria4.jpeg" class="gallery-img shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
               <div class="overlay">
-                  <div class="text">Información de la Imagen 1</div>
+                  <div class="text">HOLAAA</div>
               </div>
           </div>
           <div class="position-relative">
@@ -344,9 +344,92 @@
 
 <!-- FIN TIRA  -->
 
+<!-- FOOTER -->
+<!-- 
+<footer style="width: 100%; padding: 40px 0; background-color: #f8f9fa;">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 d-flex flex-column align-items-center justify-content-center texto-colaboracion font-weight-bold text-center" style="font-size: 1.5vw; color: navy;">
+        <p style="margin: 10px 0;">Phone: +34 917911370</p>
+        <p style="margin: 10px 0;">Email: burningman@gmail.com</p>
+        <p style="margin: 10px 0;">Black Rock Desert, Nevada</p>
+        <p style="margin: 10px 0;">Privacy Policy</p>
+        <p style="margin: 10px 0;">Terms and Conditions</p>
+      </div>
+    </div>
+  </div>
+</footer> -->
 
 
     
+
+
+
+<footer id="site-footer" role="contentinfo" class="bg-light mt-6">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap">
+        <div class="col-md-3">
+          <p class="title mt-4">Quiénes somos</p>
+          <p><a itemprop="url" title="Manifiesto" href="/es/manifesto/" class="footer-link">Manifiesto</a></p>
+          <p><a itemprop="url" title="Condiciones de uso" href="/es/terms-and-conditions/" class="footer-link">Términos y condiciones</a></p>
+          <p><a itemprop="url" title="Política de privacidad" href="/es/legal/" class="footer-link">Política de privacidad</a></p>
+        </div>
+        <div class="col-md-3">
+          <p class="title mt-4">Cómo comprar</p>
+          <p><a itemprop="url" title="Preguntas frecuentes" href="/es/faqs/" class="footer-link">Preguntas frecuentes</a></p>
+          <p><a itemprop="url" title="Envíos y devoluciones" href="/es/shipping-and-returns/" class="footer-link">Envíos y devoluciones</a></p>
+          <p><a rel="noindex, nofollow" itemprop="url" title="Tabla de tallas" href="javascript:void(0);" onclick="openSizeChart();" class="footer-link">Tabla de tallas</a></p>
+        </div>
+        <div class="col-md-3">
+          <p class="title mt-4">Contáctanos</p>
+          <p><a rel="noindex, nofollow" title="Contáctanos" href="mailto:hello@nowthenlabel.com" class="footer-link">Atención al cliente</a></p>
+          <p><a rel="noindex, nofollow" href="javascript:void(0);" onclick="document.getElementById('telon_info_wholesale').style.display='inline'" class="footer-link">Wholesale</a></p>
+          <p><a rel="noindex, nofollow" title="Prensa y RRPP" href="mailto:press@nowthenlabel.com" class="footer-link">Prensa y RRPP</a></p>
+        </div>
+        <div class="col-md-3 d-flex align-items-center">
+          <div class="newsletter w-100">
+            <p>Suscríbete para descubrir nuevos lanzamientos y ofertas exclusivas. 10% de descuento en tu primera compra.</p>
+            <input class="btn btn-primary" type="button" value="UNIRME" onclick="document.getElementById('telon_form_popup_newsletter').style.display='inline'">
+          </div>
+          <p class="follow-us text-end">Síguenos</p>
+          <ul class="footer_socials_wrapper list-unstyled d-flex justify-content-end">
+            <li><a href="https://www.facebook.com/NowThenLabel" title="Follow us on Facebook" target="_blank" class="social_media"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/nowthenlabel/" title="Follow us on Instagram" target="_blank" class="social_media"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="mailto:hello@nowthenlabel.com" title="Send us an e-mail"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer-copyright-area mt-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="social_and_copyright_text">
+            <div class="copyright_text">
+              <a href="img/logos deia color-05 2.png" class="footer-link">DEIÁ</a> © 2024
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Bootstrap JS, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
