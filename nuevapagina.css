@@ -1,0 +1,17 @@
+
+
+.card {
+    border: none; /* Eliminar borde de la tarjeta */
+    background-color: transparent;
+}
+body {
+    background-color: #9eccd9;
+}
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+.carousel-item .col {
+    flex: 0 0 25%; /* Cada tarjeta ocupa 25% del ancho (4 tarjetas por fila) */
+}
+
