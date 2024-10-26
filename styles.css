@@ -134,9 +134,14 @@ a:hover {
 }
 
 .texto-colaboracion {
-    color: #fbfbfb; /* Cambia este color al que prefieras */
+    color: #d3e4f5; /* Cambia este color al que prefieras */
     font-size: 3.5rem; /* Tamaño de texto más pequeño */
-    text-align: right; /* Alinear el texto a la derecha */
+    text-align: right;
+    background-color: #242a51!important; /* Alinear el texto a la derecha */
+}
+
+.texto-frase {
+    color: #242a51 !important;
 }
 
 .bg-primary {
