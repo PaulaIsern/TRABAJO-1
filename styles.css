@@ -40,21 +40,14 @@ h2.text-white {
     background-position: center;
 }
 
-.sub-menu {
-    padding: 0;
-    position: fixed;
-    top: 0;
-    left: -210px; /* Ocultar el menú inicialmente */
-    width: 210px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    transition: left 0.3s ease;
-    z-index: 1;
-}
+/* STYLES MENU  */
 
-.sub-menu.oppenned {
-    left: 0; /* Muestra el menú cuando está activo */
-}
+
+
+ /* FIN MENU  */
+
+
+
 
 ul {
     margin: 0;
