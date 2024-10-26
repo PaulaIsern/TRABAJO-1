@@ -40,9 +40,29 @@ h2.text-white {
     background-position: center;
 }
 
-/* STYLES MENU  */
+/* STYLES MENU hamburguesa */
 
 
+.custom-header {
+    background-image: none;
+  }
+  
+  .menu-content {
+    background-color: transparent !important;
+    margin-top: 60px;
+  }
+  
+  /* Color de texto personalizado y tamaño de fuente */
+  .text-custom {
+    color: #87CEEB; /* Azul claro */
+    font-size: 1.2rem; /* Tamaño de fuente personalizado */
+  }
+  
+  /* Estilo de hover para el botón "Crea tu Bikini" */
+  .btn-hover:hover {
+    color: #fff; /* Color del texto al hacer hover */
+  }
+  
 
  /* FIN MENU  */
 

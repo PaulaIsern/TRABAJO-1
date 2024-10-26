@@ -24,28 +24,27 @@
 
 
 
-<header class="custom-header" style="background-image: none;">
-   
-  <div class="pos-f-t d-md-none">
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="p-4" style="background-color: transparent !important; margin-top: 60px;">
-        <div class="btn-group-vertical w-100">
-          <button type="button" class="btn mb-2">Nuestra historia</button>
-          <button type="button" class="btn mb-2">Productos</button>
-          <button type="button" class="btn  mb-2">Crea tu Bikini</button>
-          
-          <button type="button" href="nuevapagina.html" class="btn  mb-2">Colabora</button>
-        </div>
+<div class="pos-f-t d-md-none">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="p-4 menu-content">
+      <div class="btn-group-vertical w-100">
+        <button type="button" class="btn mb-2 text-custom">Nuestra historia</button>
+        <button type="button" class="btn mb-2 text-custom">Productos</button>
+        
+        <!-- Enlace Crea tu Bikini con hover y enlace -->
+        <a href="nuevapagina.html" class="btn mb-2 btn-hover text-custom">Crea tu Bikini</a>
+        
+        <button type="button" class="btn mb-2 text-custom">Colabora</button>
       </div>
     </div>
-    
-    <nav class="navbar navbar-dark fixed-top">
-      <button class="navbar-toggler border-0 ml-0" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="img/ICONO MENU.png" alt="Custom Icon" style="width:50px; height:30px;">
-      </button>
-    </nav>
   </div>
   
+  <nav class="navbar navbar-dark fixed-top">
+    <button class="navbar-toggler border-0 ml-0" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="img/ICONO MENU.png" alt="Custom Icon" style="width:50px; height:30px;">
+    </button>
+  </nav>
+</div>
   
 
 
@@ -216,21 +215,27 @@
   <!-- Texto animado -->
   <div class="row w-100">
     <div class="col-md-12 text-center" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="200">
-        <h2 class="display-4">La historia de Deiá,</h2>
+        <h2 class="display-4 mb-4 ">La historia de Deiá,</h2>
         <p class="lead texto-negrita font-weight-bold" style="font-size: 6vw;">UN TRIBUTO A NUESTRA ISLA MADRE</p>
     </div>
   </div>
 </div>
 
 
-
 <div class="container mt-5">
   <div class="row">
-      <div class="col-md-6 position-relative" data-aos="fade-right">
-          <img src="img/ANIMACION1.webp" class="img-fluid" alt="Bikini colgando">
-      </div>
+    <!-- Columna de Animación Uno (izquierda) -->
+    <div class="col-md-6 position-relative d-flex align-items-center" data-aos="fade-right">
+      <img src="img/ANIMACION1.webp" class="img-fluid" alt="Bikini colgando">
+    </div>
+
+    <!-- Columna de Imagen Bañador (derecha) -->
+    <div class="col-md-6 position-relative d-flex align-items-center justify-content-center" data-aos="fade-left">
+      <img src="img/bañador.webp" class="img-fluid" style="width: 50%;" alt="Imagen de Bañador">
+    </div>
   </div>
 </div>
+
 
 
 
