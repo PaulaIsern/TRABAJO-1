@@ -40,21 +40,34 @@ h2.text-white {
     background-position: center;
 }
 
-.sub-menu {
-    padding: 0;
-    position: fixed;
-    top: 0;
-    left: -210px; /* Ocultar el menú inicialmente */
-    width: 210px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    transition: left 0.3s ease;
-    z-index: 1;
-}
+/* STYLES MENU hamburguesa */
 
-.sub-menu.oppenned {
-    left: 0; /* Muestra el menú cuando está activo */
-}
+
+.custom-header {
+    background-image: none;
+  }
+  
+  .menu-content {
+    background-color: transparent !important;
+    margin-top: 60px;
+  }
+  
+  /* Color de texto personalizado y tamaño de fuente */
+  .text-custom {
+    color: #87CEEB; /* Azul claro */
+    font-size: 1.2rem; /* Tamaño de fuente personalizado */
+  }
+  
+  /* Estilo de hover para el botón "Crea tu Bikini" */
+  .btn-hover:hover {
+    color: #fff; /* Color del texto al hacer hover */
+  }
+  
+
+ /* FIN MENU  */
+
+
+
 
 ul {
     margin: 0;
