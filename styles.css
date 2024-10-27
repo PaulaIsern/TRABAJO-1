@@ -68,6 +68,11 @@ h2.text-white {
 
 
 
+/* FIN STYLES HOVER  */
+
+
+
+
 
 ul {
     margin: 0;
@@ -150,12 +155,9 @@ a:hover {
     color: #d3e4f5; /* Cambia este color al que prefieras */
     font-size: 3.5rem; /* Tamaño de texto más pequeño */
     text-align: right;
-    background-color: #242a51!important; /* Alinear el texto a la derecha */
 }
 
-.texto-frase {
-    color: #242a51 !important;
-}
+
 
 .bg-primary {
     background-color: #113558 !important;
@@ -166,18 +168,6 @@ a:hover {
     z-index: 2;
 }
 
-/* Wave effect */
-.d-flex.flex-column.justify-content-center.align-items-center.vh-100.position-relative {
-    overflow: hidden; 
-    position: relative;
-}
-
-.wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
 
 /* estilos primer texto deia  */
 
@@ -187,10 +177,15 @@ a:hover {
 
 
 
+/* ANIAMCION TEXTO EMOTIVO  */
 
 
 
 
+
+
+
+/* FIN ANIMACION T. EMOTIVO  */
 /* ESTILOS TRANSICION  NUMEROS  */
 
 
@@ -198,18 +193,13 @@ a:hover {
     max-width: 80px; /* Ajustar el tamaño de los iconos */
 }
 
+/* Fondo azul marino */
+.bg-dark-blue {
+    background-color: #001f3f;
+  }
+  
 
-.bg-light {
-    background-color: #2861a8; /* Azul claro para el fondo general */
-}
-
-.container mt-5 {
-    background-color: #003366; /* Azul marino para el fondo interno */
-    color: rgb(255, 255, 255); /* Color del texto en el fondo azul marino */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-}
-
+  
 
 
 
@@ -285,20 +275,77 @@ a:hover {
 }
 
 
+.position-relative {
+    overflow: hidden; /* Para que la superposición no se salga del contenedor */
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s; /* Transición suave al hacer hover */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    color: white;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    opacity: 0; /* Comienza oculto */
+    transition: opacity 0.3s; /* Transición suave de la opacidad */
+}
+
+.carousel-item:hover .overlay {
+    opacity: 1; /* Muestra la superposición al hacer hover */
+}
+
+.carousel-item:hover .gallery-img {
+    transform: scale(1.05); /* Escala la imagen un poco al hacer hover */
+}
+
+.text {
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    text-align: center; /* Centra el texto */
+}
+
 /* FOOTER  */
 
-.footer-link {
+/* .footer-link {
     color: navy; /* Color azul marino */
-    font-size: 1.2rem; /* Tamaño de fuente más grande */
-    text-decoration: none;
+    /* font-size: 1.2rem; /* Tamaño de fuente más grande */
+    /* text-decoration: none;
   }
-  
-  .footer-link:hover {
-    text-decoration: underline; /* Subrayar al pasar el mouse */
+    */
+  /* .footer-link:hover {
+    text-decoration: underline; Subrayar al pasar el mouse
   }
   
   .title {
-    color: navy; /* Color azul marino para títulos */
-    font-size: 1.5rem; /* Tamaño de fuente de los títulos */
+    color: navy; Color azul marino para títulos */
+    /* font-size: 1.5rem; Tamaño de fuente de los títulos
+  }
+   */ 
+
+
+   /* Estilos generales */
+.footer-link {
+    color: #88ccff;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
   
+  /* Animación al pasar el ratón */
+  .footer-link:hover {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #200678;
+  }
+  
+
+  
+
