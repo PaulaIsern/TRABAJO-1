@@ -75,15 +75,78 @@ background-color: black!important;
     font-size: 1.1em;
     color: #200678;
   }
-/* color de iconos navbar */
-  .fa-cart-shopping:before, .fa-shopping-cart:before {
-    content: "\f07a";
-    color: #d3e4f5;
-    margin: 20px 20px 20px;
-}
-.fa-user:before {
-    content: "\f007";
-    color: #d3e4f5;
+
+  /* color de icono ir hacia atras */
+  .me-3 {
+    margin-right: 1rem !important;
+    color: beige;
 }
 
+
+
+/* Menu texto */
+
+.menu-content {
+color: #d3e4f5;
+}
+
+.p-4 menu-content {
+    color: aliceblue;
+}
+
+.text-custom {
+    color: #f8f9fa;
+    font-size: 20px;
+
+}
+.menu-content {
+    color: #f8f9fa;
+    margin-top: 60px;
+    position: fixed;    
+    background-color: #f8f9fa;
+    height: 100vh;         /* Ocupa toda la altura de la pantalla */
+    width: 100px;    
+}
+.bg-dark {
+    background-color:#546abf !important;
+}
+
+.w-50 {
+    width: 35% !important;
+}
+
+
+.close-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.collapse {
+    transition: height 0.10s ease !important; /* Cambia la duración de la transición a 0.15 segundos */
+  }
+
+
+  /* Esconde la barra de búsqueda inicialmente */
+#searchInput {
+    transition: width 0.3s ease;
+}
+
+.d-none {
+    display: none !important;
+}
+
+/* Adaptar iconos en vista móvil */
+@media (max-width: 768px) {
+    .navbar .btn {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    /* Barra de búsqueda se muestra completa en vista móvil */
+    #searchInput {
+        width: 100%;
+    }
+}
+
+
+/* GALERIA NUEVA */
 

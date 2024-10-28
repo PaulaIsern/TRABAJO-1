@@ -36,32 +36,57 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
-       <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg my-navbarcolor" data-bs-theme="dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="img/logos deia color-05 2.png" alt="Logo" style="height: 40px;"> <!-- Ajusta la ruta y la altura según sea necesario -->
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn my-color-btn" type="submit">Search</button>
-            </form>
-            <!-- Íconos de carrito y perfil -->
-            <a href="#" class="nav-link">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-            <a href="#" class="nav-link">
-                <i class="fas fa-user"></i>
-            </a>
-        </div>
-    </div>
-</nav>
+
+        <header class="custom-header" style="background-image: none;">
+            <div class="pos-f-t">
+                
+                <!-- Navbar con el botón de menú hamburguesa e iconos a la derecha -->
+                <nav class="navbar navbar-dark fixed-top d-flex justify-content-between w-100 p-3">
+                    
+                    <!-- Botón de menú hamburguesa -->
+                    <button class="navbar-toggler border-0 ml-0" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="img/logos deia color-05 2.png" alt="Custom Icon" style="width:70px; height:50px;">
+                    </button>
+                    
+                    <!-- Iconos de Buscar, Carrito y Perfil -->
+                    <div class="d-flex align-items-center">
+                        <!-- Icono de Buscar -->
+                        <button id="searchButton" class="btn btn-link p-2" onclick="toggleSearchBar()" aria-label="Buscar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <input type="text" id="searchInput" class="form-control d-none" placeholder="Buscar..." style="width: 150px;">
+                        
+                        <!-- Icono de Carrito -->
+                        <button class="btn btn-link p-2" aria-label="Carrito">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                        
+                        <!-- Icono de Perfil -->
+                        <button class="btn btn-link p-2" aria-label="Perfil">
+                            <i class="fa fa-user"></i>
+                        </button>
+                    </div>
+                </nav>
+                
+                <!-- Menú desplegable -->
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="menu-overlay position-fixed top-0 start-0 h-100 w-50 bg-dark p-4" style="z-index: 1050;">
+                        
+                        <!-- Botón de cierre dentro del menú -->
+                        <button type="button" class="close-btn btn-close btn-close-white position-absolute top-0 end-0 m-3" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-label="Close"></button>
+                        
+                        <!-- Contenido del menú -->
+                        <div class="btn-group-vertical w-100 mt-4">
+                            <a href="index.html" class="btn mb-2 text-custom">NUESTRA HISTORIA</a>
+                            <button type="button" class="btn mb-2 text-custom">PRODUCTOS</button>
+                            <a href="nuevapagina.html" class="btn mb-2 text-custom">CREA TU BIKINI</a>
+                            <button type="button" class="btn mb-2 text-custom">COLABORA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
 
 
     <!-- GALERÍA CON CARRUSEL -->
@@ -289,6 +314,10 @@
         </div>
     </div>
 
+<!-- CARROUSEL NUEVO -->
+ 
+
+    <!-- Footer  -->
     <footer id="site-footer" role="contentinfo" class="bg-light mt-6">
         <div class="container">
           <div class="row">
