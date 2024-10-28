@@ -12,30 +12,6 @@ document.querySelectorAll('.hover-link').forEach((item) => {
 });
 
 
-// MENU
-// $(document).ready(function () {
-//     // Cierra el menú al hacer clic en un enlace
-//     $('.navbar-nav a').on('click', function () {
-//         $('.navbar-collapse').collapse('hide');
-//     });
-// });
-
-
-// MENU
-
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     const button = document.getElementById("hamburger-button");
-//     const menu = document.getElementById("navbarNav");
-
-//     button.addEventListener("click", function() {
-//         menu.classList.toggle("oppenned");
-//     });
-// });
-
-
-
-
 // menu
 
 

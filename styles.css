@@ -159,6 +159,8 @@ a:hover {
 
 
 
+
+
 .bg-primary {
     background-color: #113558 !important;
 }
@@ -175,17 +177,26 @@ a:hover {
     min-height: 80vh; /* Ajusta según necesites */
 }
 
+/* Ajusta el tamaño del texto en dispositivos grandes */
+.texto-colaboracion {
+    font-size: 2vw;
+}
 
 
-/* ANIAMCION TEXTO EMOTIVO  */
+@media (max-width: 576px) { 
+    .texto-colaboracion {
+        font-size: 5vw; 
+        text-align: center;
+    }
+    .col-md-6:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 
 
-
-
-
-
-/* FIN ANIMACION T. EMOTIVO  */
 /* ESTILOS TRANSICION  NUMEROS  */
 
 
@@ -198,9 +209,6 @@ a:hover {
     background-color: #001f3f;
   }
   
-
-  
-
 
 
 
@@ -315,21 +323,6 @@ a:hover {
 
 /* FOOTER  */
 
-/* .footer-link {
-    color: navy; /* Color azul marino */
-    /* font-size: 1.2rem; /* Tamaño de fuente más grande */
-    /* text-decoration: none;
-  }
-    */
-  /* .footer-link:hover {
-    text-decoration: underline; Subrayar al pasar el mouse
-  }
-  
-  .title {
-    color: navy; Color azul marino para títulos */
-    /* font-size: 1.5rem; Tamaño de fuente de los títulos
-  }
-   */ 
 
 
    /* Estilos generales */
