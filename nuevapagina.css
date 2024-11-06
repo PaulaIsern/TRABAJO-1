@@ -157,6 +157,41 @@ body {
     display: none !important;
 }
 
+
+.custom-text {
+    text-align: center;
+    line-height: 1.3; /* Ajusta el espacio entre líneas */
+    max-width: 900px; /* Ancho máximo para facilitar la lectura */
+    margin: 0 auto; /* Centra el texto en la página */
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+}
+
+
+
+/* tEXTO ANIMADO H1 CODEPEN */
+
+
+@keyframes background {
+  from {
+    background-position: 0 0%;
+  }
+  to {
+    background-position: 0 -200px;
+  }
+}
+h1 {
+  text-align: center;
+  font-size: 100px;
+  background: url(http://html5book.ru/wp-content/uploads/2016/08/bubbles.png) repeat;
+  background-size: 200px auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: background 10s infinite linear;
+}
+
+
+
 /* Adaptar iconos en vista móvil */
 @media (max-width: 768px) {
     .navbar .btn {
