@@ -78,3 +78,17 @@ counters.forEach(counter => {
 
 // FOOTER 
 
+//add to cart
+document.addEventListener('DOMContentLoaded', () => {
+  // Selecciona todos los botones "Add to cart"
+  const addToCartButtons = document.querySelectorAll('.add-to-cart');
+  const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+
+  // Añade el evento de clic a cada botón
+  addToCartButtons.forEach(button => {
+      button.addEventListener('click', (event) => {
+          event.preventDefault(); // Evita el comportamiento por defecto del enlace
+          cartModal.show(); // Muestra el modal
+      });
+  });
+});
