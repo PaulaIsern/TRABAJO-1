@@ -1,15 +1,17 @@
 .card {
-    border: none; 
+    border: none;
     background-color: transparent;
+    min-width: 150px;
 }
 
 body {
     background-color: #242a51;
-    font-family: 'Afacad Flux', sans-serif; /* Aplica la fuente al cuerpo */
+    font-family: 'Afacad Flux', sans-serif;
+    /* Aplica la fuente al cuerpo */
 }
 
 .carousel-item .col {
-    flex: 0 0 25%; 
+    flex: 0 0 25%;
 }
 
 
@@ -22,62 +24,78 @@ body {
 
 .mb-4 {
     color: #d3e4f5;
-    
+
 }
 
 .fs-1 {
     font-size: 10px;
 }
+
 .text-muted {
     --bs-text-opacity: 1;
     color: #d3e4f5 !important;
 }
-.card-body{
+
+.card-body {
     color: #d3e4f5 !important;
 }
 
-.btn-primary {
-    background:transparent;
-    border-color: #d3e4f5;
-    --bs-btn-hover-bg:#3c4f99!important;
-    --bs-btn-hover-border-color:none;
-    --bs-btn-active-bg:#d3e4f5;
 
+.btn-primary {
+    background: transparent;
+    border-color: #d3e4f5;
+    --bs-btn-hover-bg: #3c4f99 !important;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-active-bg: #d3e4f5;
+
+}
+
+.btn-unirme {
+    background-color: #3c4f99;
+    border-color: #d3e4f5;
+    --bs-btn-hover-bg: #3c4f99 !important;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-active-bg: #d3e4f5;
+    color: #d3e4f5;
 }
 
 .--bs-btn-hover-bg {
-background-color: black!important;
+    background-color: black !important;
 }
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: #d3e4f5; /* Cambia 'red' por el color que desees */
-            border-radius: 50%; /* Opcional: Añadir bordes redondeados */
-            color: #242a51 !important;
-        }
 
-        /* Asegurarte de que el tamaño de las flechas sea el correcto */
-        .carousel-control-prev,
-        .carousel-control-next {
-            width: 10%; /* Ajusta el ancho de los botones si es necesario */
-        }
-   
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #d3e4f5;
+    /* Cambia 'red' por el color que desees */
+    border-radius: 50%;
+    /* Opcional: Añadir bordes redondeados */
+    color: #242a51 !important;
+}
 
-   /* Estilos generales */
+/* Asegurarte de que el tamaño de las flechas sea el correcto */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+    /* Ajusta el ancho de los botones si es necesario */
+}
+
+
+/* Estilos generales */
 .footer-link {
     color: #88ccff;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
-  
-  /* Animación al pasar el ratón */
-  .footer-link:hover {
+}
+
+/* Animación al pasar el ratón */
+.footer-link:hover {
     font-weight: bold;
     font-size: 1.1em;
     color: #200678;
-  }
+}
 
-  /* color de icono ir hacia atras */
-  .me-3 {
+/* color de icono ir hacia atras */
+.me-3 {
     margin-right: 1rem !important;
     color: beige;
 }
@@ -87,7 +105,7 @@ background-color: black!important;
 /* Menu texto */
 
 .menu-content {
-color: #d3e4f5;
+    color: #d3e4f5;
 }
 
 .p-4 menu-content {
@@ -99,16 +117,19 @@ color: #d3e4f5;
     font-size: 20px;
 
 }
+
 .menu-content {
     color: #f8f9fa;
     margin-top: 60px;
-    position: fixed;    
+    position: fixed;
     background-color: #f8f9fa;
-    height: 100vh;         /* Ocupa toda la altura de la pantalla */
-    width: 100px;    
+    height: 100vh;
+    /* Ocupa toda la altura de la pantalla */
+    width: 100px;
 }
+
 .bg-dark {
-    background-color:#546abf !important;
+    background-color: #546abf !important;
 }
 
 .w-50 {
@@ -120,12 +141,14 @@ color: #d3e4f5;
     font-size: 1.5rem;
     cursor: pointer;
 }
+
 .collapse {
-    transition: height 0.10s ease !important; /* Cambia la duración de la transición a 0.15 segundos */
-  }
+    transition: height 0.10s ease !important;
+    /* Cambia la duración de la transición a 0.15 segundos */
+}
 
 
-  /* Esconde la barra de búsqueda inicialmente */
+/* Esconde la barra de búsqueda inicialmente */
 #searchInput {
     transition: width 0.3s ease;
 }
@@ -150,3 +173,85 @@ color: #d3e4f5;
 
 /* GALERIA NUEVA */
 
+
+.header-top {
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+/* Pequeño (sm) */
+@media (min-width: 576px) {
+    .header-top {
+        position: fixed;
+    }
+}
+
+
+/* Estilo personalizado del modal */
+.custom-modal {
+    background-color: #e0f0ff;
+    /* Fondo azul claro */
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.modal-body {
+    color: #2e50a0;
+    /* Color de texto azul oscuro */
+}
+
+/* Ícono de check centrado */
+.check-icon svg {
+    color: #2e50a0;
+    /* Color del ícono */
+}
+
+/* Título en el modal */
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2e50a0;
+}
+
+/* Texto debajo del título */
+.modal-body p {
+    font-size: 1rem;
+    color: #2e50a0;
+}
+
+/* Botón de cerrar */
+.custom-close-btn {
+    background-color: #2e50a0;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 30px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.custom-close-btn:hover {
+    background-color: #243f7b;
+}
+
+/* Quita borde del header */
+.modal-header {
+    border: none;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s;
+    /* Transición suave al hacer hover */
+}
+
+@media (min-width: 992px) {
+    .w-lg-75  {
+        width: 75% !important;
+    }
+}
