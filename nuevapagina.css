@@ -7,7 +7,6 @@
 body {
     background-color: #242a51;
     font-family: 'Afacad Flux', sans-serif;
-    /* Aplica la fuente al cuerpo */
 }
 
 .carousel-item .col {
@@ -15,10 +14,7 @@ body {
 }
 
 
-.card-img-top {
-    border-radius: 50%;
-    object-fit: cover;
-}
+
 
 /* Flechas carrousel */
 
@@ -40,6 +36,11 @@ body {
     color: #d3e4f5 !important;
 }
 
+
+/* nueva galeria */
+.card-img-top {
+    object-fit: cover;
+}
 
 .btn-primary {
     background: transparent;
@@ -66,17 +67,13 @@ body {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: #d3e4f5;
-    /* Cambia 'red' por el color que desees */
     border-radius: 50%;
-    /* Opcional: Añadir bordes redondeados */
     color: #242a51 !important;
 }
 
-/* Asegurarte de que el tamaño de las flechas sea el correcto */
 .carousel-control-prev,
 .carousel-control-next {
     width: 10%;
-    /* Ajusta el ancho de los botones si es necesario */
 }
 
 
@@ -108,6 +105,7 @@ body {
     color: #d3e4f5;
 }
 
+
 .p-4 menu-content {
     color: aliceblue;
 }
@@ -124,7 +122,6 @@ body {
     position: fixed;
     background-color: #f8f9fa;
     height: 100vh;
-    /* Ocupa toda la altura de la pantalla */
     width: 100px;
 }
 
@@ -144,7 +141,6 @@ body {
 
 .collapse {
     transition: height 0.10s ease !important;
-    /* Cambia la duración de la transición a 0.15 segundos */
 }
 
 
@@ -160,11 +156,10 @@ body {
 
 .custom-text {
     text-align: center;
-    line-height: 1.3; /* Ajusta el espacio entre líneas */
-    max-width: 900px; /* Ancho máximo para facilitar la lectura */
-    margin: 0 auto; /* Centra el texto en la página */
+    line-height: 1.3; 
+    max-width: 900px; 
+    margin: 0 auto; 
     width: 100%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
 }
 
 
@@ -228,7 +223,6 @@ h1 {
 
 .custom-modal {
     background-color: #e0f0ff;
-    /* Fondo azul claro */
     border-radius: 15px;
     padding: 20px;
 }
@@ -241,7 +235,6 @@ h1 {
 /* Ícono de check centrado */
 .check-icon svg {
     color: #2e50a0;
-    /* Color del ícono */
 }
 
 /* Título en el modal */
@@ -256,6 +249,7 @@ h1 {
     font-size: 1rem;
     color: #2e50a0;
 }
+
 
 /* Botón de cerrar */
 .custom-close-btn {
@@ -281,13 +275,24 @@ h1 {
 .gallery-img {
     width: 100%;
     height: auto;
-    /* Mantiene la proporción de la imagen */
     transition: transform 0.3s;
-    /* Transición suave al hacer hover */
 }
 
 @media (min-width: 992px) {
     .w-lg-75  {
         width: 75% !important;
     }
+}
+
+.footer-link {
+    color: #88ccff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Animación al pasar el ratón */
+.footer-link:hover {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #200678;
 }

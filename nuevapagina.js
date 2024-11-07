@@ -33,13 +33,10 @@ function toggleSearchBar() {
     searchInput.focus();
 }
 
+// carrousel nuevo, primero
 
-// Script para animar el texto con Typed.js
-window.onload = function() {
-    var typed6 = new Typed('#typed6', {
-        strings: ['¡Gracias por acompañarnos en este recorrido por DEIÁ! Nos encantó que exploraras nuestra colección de bikinis y esperamos haberte inspirado para tu próxima aventura.'],
-        typeSpeed: 1500,  // Velocidad de tipeo en milisegundos (más bajo es más rápido)
-        backSpeed: 150,   // Velocidad al borrar (0 significa que no borra)
-        loop: true      // Repite el texto infinitamente
+    AOS.init({
+        duration: 1000,  // Duración de la animación
+        easing: 'ease',  // Efecto de aceleración de la animación
+        once: true,      // La animación solo se activa una vez
     });
-};

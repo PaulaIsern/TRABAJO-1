@@ -1,5 +1,6 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css">
     <!-- Tipografia -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,94 +18,105 @@
 </head>
 
 <body>
-    
-  
-<!--  MENU  -->
 
 
-<header class="custom-header" style="background-image: none;">
+    <!--  MENU  -->
 
 
-<div class="pos-f-t d-md-none">
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="p-4 menu-content">
-      <div class="btn-group-vertical w-100">
-        <button type="button" class="btn mb-2 text-custom">NUESTRA HISTORIA</button>
-        <button type="button" class="btn mb-2 text-custom">PRODUCTOS</button>
-        
-        <a href="nuevapagina.html" class="btn mb-2 text-custom">Crea tu Bikini</a>
-        
-        <button type="button" class="btn mb-2 text-custom">COLABORA</button>
-      </div>
-    </div>
-  </div>
-  
-  <nav class="navbar navbar-dark fixed-top">
-    <button class="navbar-toggler border-0 ml-0" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <img src="img/logos deia color-05 2.png" alt="Custom Icon" style="width:70px; height:50px;">
-    </button>
-  </nav>
-</div>
-  
+    <header class="custom-header" style="background-image: none;">
 
-
-<div class="container overflow-hidden text-center d-none d-md-block" id="contentToHide">
-  <div class="row g-0 hoverable justify-content-center align-items-center" style="min-height: 20vh;">
-      <div class="p-3 hover-link col-sm-6 col-md-8" data-bg="img/collage1.webp">
-          <span class="font-weight-thin" style="font-size: 1.5rem;">NUESTRA HISTORIA</span>
-      </div>
-      <div class="p-3 hover-link col-6 col-md-4" data-bg="img/collage4.webp">
-          <span class="font-weight-thin" style="font-size: 1.5rem;">PRODUCTOS</span>
-      </div>
-      <div class="hover-link col-3 col-md-4" data-bg="img/collage2.webp">
-        <a href="nuevapagina.html" class="font-weight-thin" style="font-size: 1.5rem;">CREA TU BIKINI</a>
-      </div>
-      <div class="hover-link col-sm-3 col-md-8" data-bg="img/collage3.webp">
-          <span class="font-weight-thin" style="font-size: 1.5rem;">COLABORA</span>
-      </div>
-  </div>
-
-  <div class="text-logo text-center mt-1">
-      <img src="img/logos deia color-05 2.png" alt="Logo DEIÀ" class="img-fluid" style="max-width: 40%;">
-  </div>
-</div>
-<div class="video-container container-fluid p-0">
-    <div class="row no-gutters">
-      <div class="col-12  d-lg-block">
-        <!-- Video para pantallas grandes (ordenador) -->
-        <video autoplay muted loop class="video-bg ">
-          <source src="img/VIDEOHEADER.mp4" type="video/mp4">
+        <!-- Video de fondo -->
+        <video autoplay muted loop class="d-block d-xxl-none"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+            <source src="img/VIDEOHEADER.mp4" type="video/mp4">
         </video>
-      </div>
+
+        <div class="pos-f-t d-md-none">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="p-4 menu-content">
+                    <div class="btn-group-vertical w-100">
+                        <button type="button" class="btn mb-2 text-custom">NUESTRA HISTORIA</button>
+                        <button type="button" class="btn mb-2 text-custom">PRODUCTOS</button>
+                        <a href="nuevapagina.html" class="btn mb-2 text-custom">Crea tu Bikini</a>
+
+                        <button type="button" class="btn mb-2 text-custom">COLABORA</button>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-dark fixed-top">
+                <button class="navbar-toggler border-0 ml-0" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="img/logos deia color-05 2.png" alt="Custom Icon" style="width:70px; height:50px;">
+                </button>
+            </nav>
+        </div>
+
+        <!-- Contenido -->
+        
+        <div class="container overflow-hidden text-center d-none d-md-block" id="contentToHide"
+            style="position: relative; z-index: 1;">
+            <div class="row g-0 hoverable justify-content-center align-items-center" style="min-height: 20vh;">
+                <div class="p-3 hover-link col-sm-6 col-md-8" data-bg="img/collage1.webp">
+                    <span class="font-weight-thin" style="font-size: 1.5rem;">NUESTRA HISTORIA</span>
+                </div>
+                <div class="p-3 hover-link col-6 col-md-4" data-bg="img/collage4.webp">
+                    <span class="font-weight-thin" style="font-size: 1.5rem;">PRODUCTOS</span>
+                </div>
+                <div class="hover-link col-3 col-md-4" data-bg="img/collage2.webp">
+                    <a href="nuevapagina.html" class="font-weight-thin" style="font-size: 1.5rem;">CREA TU BIKINI</a>
+                </div>
+                <div class="hover-link col-sm-3 col-md-8" data-bg="img/collage3.webp">
+                    <span class="font-weight-thin" style="font-size: 1.5rem;">COLABORA</span>
+                </div>
+            </div>
+
+            <div class="text-logo text-center mt-1">
+                <img src="img/logos deia color-05 2.png" alt="Logo DEIÀ" class="img-fluid" style="max-width: 40%;">
+            </div>
+        </div>
+        <div class="video-container container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-12 d-none d-xxl-block">
+                    <!-- Video para pantallas grandes (ordenador) -->
+                    <video autoplay muted loop class="video-bg ">
+                        <source src="img/VIDEOHEADER.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+
+
+
+    <!-- FIN MENU  -->
+
+
+
+    <div class="d-flex flex-column justify-content-center align-items-center vh-250 position-relative my-10 menu-tribute"
+        style="min-height: 70vh; ">
+        <!-- Imagen centrada encima del texto con más separación arriba -->
+        <div class="row w-150 m-5 p-0">
+            <div class="col-md-12 text-center mt-5 mb-4"> <!-- Cambiado a mt-5 para mayor separación arriba -->
+                <img src="img/LOGOA.png" alt="Logo Deiá" class="img-fluid" style="max-width: 10%;">
+                <!-- Ajustado a max-width: 10% para hacer la imagen más pequeña -->
+            </div>
+        </div>
+
+        <!-- Texto animado -->
+        <div class="row w-100 m-1 p-5">
+            <div class="col-md-12 text-center m-0 aos-init aos-animate" data-aos="fade-up" data-aos-duration="2500"
+                data-aos-offset="200">
+                <h2 class="display-4 mt-0 mb-1">La historia de Deiá,</h2>
+                <p class="lead texto-negrita font-weight-bold m-5 mb-5" style="font-size: 6vw;">UN TRIBUTO A NUESTRA
+                    ISLA MADRE</p> <!-- mb-5 para un margen inferior más amplio -->
+            </div>
+        </div>
     </div>
-</div>
-  
-  
-
-</header> 
-
-
-
-<!-- FIN MENU  -->
-
-
-
-<div class="d-flex flex-column justify-content-center align-items-center vh-250 position-relative my-10" style="min-height: 70vh;">
-  <!-- Imagen centrada encima del texto con más separación arriba -->
-  <div class="row w-150 m-5 p-0">
-    <div class="col-md-12 text-center mt-5 mb-4"> <!-- Cambiado a mt-5 para mayor separación arriba -->
-        <img src="img/LOGOA.png" alt="Logo Deiá" class="img-fluid" style="max-width: 10%;"> <!-- Ajustado a max-width: 10% para hacer la imagen más pequeña -->
-    </div>
-  </div>
-  
-  <!-- Texto animado -->
-  <div class="row w-100 m-1 p-5">
-    <div class="col-md-12 text-center m-0 aos-init aos-animate" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="200">
-        <h2 class="display-4 mt-0 mb-1">La historia de Deiá,</h2>
-        <p class="lead texto-negrita font-weight-bold m-5 mb-5" style="font-size: 6vw;">UN TRIBUTO A NUESTRA ISLA MADRE</p> <!-- mb-5 para un margen inferior más amplio -->
-    </div>
-  </div>
-</div>
 
 
 
@@ -113,35 +125,38 @@
 
 
 
-<div class="container mt-5">
-  <div class="row">
-    <!-- Columna de Animación Uno (izquierda) -->
-    <div class="col-md-6 position-relative d-flex align-items-center" data-aos="fade-right">
-      <img src="img/ANIMACION1.webp" class="img-fluid" alt="Bikini colgando">
+    <div class="container mt-5">
+        <div class="row position-relative">
+            <!-- Columna de Animación Uno (izquierda) -->
+            <div class="col-md-6 position-relative d-flex align-items-center" data-aos="fade-right">
+                <img src="img/ANIMACION1.webp" class="img-fluid" alt="Bikini colgando">
+            </div>
+
+            <!-- Columna de Imagen Bañador (derecha) -->
+
+            <div class="col-md-6 position-relative d-flex align-items-center justify-content-center"
+                data-aos="fade-left">
+                <img src="img/TORTUGA.jpg" class="img-fluid" style="width: 50%;" alt="Imagen de Bañador">
+            </div>
+        </div>
     </div>
 
-    <!-- Columna de Imagen Bañador (derecha) -->
-     
-    <div class="col-md-6 position-relative d-flex align-items-center justify-content-center" data-aos="fade-left">
-      <img src="img/TORTUGA.jpg" class="img-fluid" style="width: 50%;" alt="Imagen de Bañador">
-    </div>
-  </div>
-</div>
-
-<div class="container mt-5 mb-5">
-    <div class="row">
-        <div class="col-md-6 d-flex align-items-center justify-content-center texto-colaboracion font-weight-bold text-center text-wrap 
+    <div class="container mt-5 mb-5">
+        <div class="row position-relative">
+            <div class="col-md-6 d-flex align-items-center justify-content-center texto-colaboracion font-weight-bold text-center text-wrap 
              text-md-wrap px-3 py-3 bg-transparent text-dark" data-aos="fade-right">
-            <span class="texto-colaboracion">Colaborando con ECONYL reciclamos basura rescatada del mar para darles una segunda vida.</span>
-        </div>
-        <div class="col-md-6 position-relative d-flex align-items-center justify-content-center" data-aos="fade-left">
-            <img src="img/ANIMACION2.webp" class="img-fluid" alt="Bikini colgando">
+                <span class="texto-colaboracion">Colaborando con ECONYL reciclamos basura rescatada del mar para darles
+                    una segunda vida.</span>
+            </div>
+            <div class="col-md-6 position-relative d-flex align-items-center justify-content-center"
+                data-aos="fade-left">
+                <img src="img/ANIMACION2.webp" class="img-fluid" alt="Bikini colgando">
+            </div>
         </div>
     </div>
-  </div>
-  
-  
-    
+
+
+
 
     <!-- ANIMACIÓN DE NÚMEROS -->
     <div class="row text-center p-4 metrics-container bg-dark-blue m-0">
@@ -174,267 +189,314 @@
 
 
 
-<!-- FIN ANIMACION DE NUMEROS  -->
+    <!-- FIN ANIMACION DE NUMEROS  -->
 
 
+    <!-- prueba carrussel responsive  -->
 
 
-<div class="container my-5">
-  <!-- Galería de imágenes -->
-  <div id="imageGallery" class="row d-none d-md-flex">
-      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-          <div class="position-relative">
-              <img src="img/GALERIA7.webp" class="gallery-img shadow-1-strong rounded mb-4" alt="Trajes de baño ECO de alta gama" />
-              <div class="overlay">
-                  <div class="text"><p>Trajes de baño ECO de alta gama</p></div>
-              </div>
-          </div>
-          <div class="position-relative">
-              <img src="img/galeria2.jpg" class="gallery-img shadow-1-strong rounded mb-4" alt="Creemos en la belleza de las cosas" />
-              <div class="overlay">
-                  <div class="text"><p>Creemos en la belleza de las cosas</p></div>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-lg-4 mb-4 mb-lg-0">
-          <div class="position-relative">
-              <img src="img/GALERIA3.jpg" class="gallery-img shadow-1-strong rounded mb-4" alt="En palabras de M. Gandhi" />
-              <div class="overlay">
-                  <div class="text"><p>En palabras de M. Gandhi “No hay belleza en la tela más fina si produce hambre e infelicidad”.</p></div>
-              </div>
-          </div>
-          <div class="position-relative">
-              <img src="img/GALERIA4.jpg" class="gallery-img shadow-1-strong rounded mb-4" alt="Siempre estamos en busca de los mejores materiales" />
-              <div class="overlay">
-                  <div class="text"><p>Siempre estamos en busca de los mejores materiales y los más ecológicos.</p></div>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-lg-4 mb-4 mb-lg-0">
-          <div class="position-relative">
-              <img src="img/GALERIA5.jpg" class="gallery-img shadow-1-strong rounded mb-4" alt="Comprometidos a proteger lo que amamos" />
-              <div class="overlay">
-                  <div class="text"><p>Somos buceadores, surfistas, aventureros del océano y estamos comprometidos a proteger lo que amamos.</p></div>
-              </div>
-          </div>
-          <div class="position-relative">
-              <img src="img/GALERIA6.jpg" class="gallery-img shadow-1-strong rounded mb-4" alt="La moda puede ser una fuerza para el bien" />
-              <div class="overlay">
-                  <div class="text"><p>Nos inspiramos en el océano y creemos que la moda puede ser una fuerza para el bien. #BacktotheOcean.</p></div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <!-- Carrusel de imágenes -->
-  <div id="galleryCarousel" class="carousel slide d-md-none" data-ride="carousel">
-      <div class="carousel-inner">
-
-          <!-- Primer elemento del carrusel -->
-          <div class="carousel-item active">
-              <img src="img/GALERIA7.webp" class="d-block w-100 gallery-img" alt="Trajes de baño ECO de alta gama">
-              <div class="overlay">
-                  <div class="text"><p>Trajes de baño ECO de alta gama</p></div>
-              </div>
-          </div>
-
-          <!-- Otros elementos del carrusel -->
-          <div class="carousel-item">
-              <img src="img/galeria2.jpg" class="d-block w-100 gallery-img" alt="Creemos en la belleza de las cosas">
-              <div class="overlay">
-                  <div class="text"><p>Creemos en la belleza de las cosas</p></div>
-              </div>
-          </div>
-
-          <div class="carousel-item">
-              <img src="img/GALERIA3.jpg" class="d-block w-100 gallery-img" alt="En palabras de M. Gandhi">
-              <div class="overlay">
-                  <div class="text"><p>En palabras de M. Gandhi “No hay belleza en la tela más fina si produce hambre e infelicidad”.</p></div>
-              </div>
-          </div>
-
-          <div class="carousel-item">
-              <img src="img/GALERIA4.jpg" class="d-block w-100 gallery-img" alt="Siempre estamos en busca de los mejores materiales">
-              <div class="overlay">
-                  <div class="text"><p>Siempre estamos en busca de los mejores materiales y los más ecológicos.</p></div>
-              </div>
-          </div>
-
-          <div class="carousel-item">
-              <img src="img/GALERIA5.jpg" class="d-block w-100 gallery-img" alt="Comprometidos a proteger lo que amamos">
-              <div class="overlay">
-                  <div class="text"><p>Somos buceadores, surfistas, aventureros del océano y estamos comprometidos a proteger lo que amamos.</p></div>
-              </div>
-          </div>
-
-          <div class="carousel-item">
-              <img src="img/GALERIA6.jpg" class="d-block w-100 gallery-img" alt="La moda puede ser una fuerza para el bien">
-              <div class="overlay">
-                  <div class="text"><p>Nos inspiramos en el océano y creemos que la moda puede ser una fuerza para el bien. #BacktotheOcean.</p></div>
-              </div>
-          </div>
-      </div>
-
-      <!-- Controles del carrusel -->
-      <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-      </a>
-  </div>
-</div>
-
-
-
-<!-- TIRA DE COLABORADORES  -->
-
-
-<div class="container mb-5">
-  <div class="marquee" role="marquee">
-      <span class="marquee-content">
-          <span class="marquee-item marquee-text">As seen in</span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO1.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO2.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO3.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO4.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO5.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO6.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO7.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO8.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO9.png" alt="" class="theme-img">
-          </span>
-          <!-- Duplicamos los logos para una repetición continua -->
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO1.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO2.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO3.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO4.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO5.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO6.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO7.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO8.png" alt="" class="theme-img">
-          </span>
-          <span class="marquee-item marquee-image">
-              <img src="img/LOGO9.png" alt="" class="theme-img">
-          </span>
-      </span>
-  </div>
-</div>
-
-
-
-<!-- FIN TIRA  -->
-
-<!-- Footer -->
-<footer class="bg-dark-blue mt-6 py-5">
-    <div class="container">
-      <div class="row">
-        <!-- Sección de "Quiénes somos" -->
-        <div class="col-md-3">
-          <p class="title mt-4 fw-bold">Quiénes somos</p>
-          <p class="footer-link">Manifiesto</p>
-          <p class="footer-link">Condiciones</p>
-          <p class="footer-link">Política de privacidad</p>
-        </div>
-  
-        <!-- Sección de "Cómo comprar" -->
-        <div class="col-md-3">
-          <p class="title mt-4 fw-bold">Cómo comprar</p>
-          <p class="footer-link">Preguntas frecuentes</p>
-          <p class="footer-link">Envíos y devoluciones</p>
-          <p class="footer-link">Tabla de tallas</p>
-        </div>
-  
-        <!-- Sección de "Contáctanos" -->
-        <div class="col-md-3">
-          <p class="title mt-4 fw-bold">Contáctanos</p>
-          <p class="footer-link">Atención al cliente</p>
-          <p class="footer-link">Wholesale</p>
-          <p class="footer-link">Prensa y RRPP</p>
-        </div>
-  
-        <!-- Sección de "Newsletter y Redes sociales" -->
-        <div class="col-md-3">
-          <p>Suscríbete para descubrir nuevos lanzamientos y ofertas exclusivas. 10% de descuento en tu primera compra.</p>
-          
-          <!-- Botón que abre el modal -->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            UNIRME
-        </button>
-      
- 
-     <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="container my-5">
+        <!-- Galería de imágenes -->
+        <div id="imageGallery" class="row d-none d-md-flex">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <div class="position-relative">
+                    <img src="img/GALERIA7.webp" class="gallery-img shadow-1-strong rounded mb-4"
+                        alt="Trajes de baño ECO de alta gama" />
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Trajes de baño ECO de alta gama</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                ...
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="position-relative">
+                    <img src="img/galeria2.jpg" class="gallery-img shadow-1-strong rounded mb-4"
+                        alt="Creemos en la belleza de las cosas" />
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Creemos en la belleza de las cosas</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="position-relative">
+                    <img src="img/GALERIA3.jpg" class="gallery-img shadow-1-strong rounded mb-4"
+                        alt="En palabras de M. Gandhi" />
+                    <div class="overlay">
+                        <div class="text">
+                            <p>En palabras de M. Gandhi “No hay belleza en la tela más fina si produce hambre e
+                                infelicidad”.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative">
+                    <img src="img/GALERIA4.jpg" class="gallery-img shadow-1-strong rounded mb-4"
+                        alt="Siempre estamos en busca de los mejores materiales" />
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Siempre estamos en busca de los mejores materiales y los más ecológicos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="position-relative">
+                    <img src="img/GALERIA5.jpg" class="gallery-img shadow-1-strong rounded mb-4"
+                        alt="Comprometidos a proteger lo que amamos" />
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Somos buceadores, surfistas, aventureros del océano y estamos comprometidos a proteger lo
+                                que amamos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative">
+                    <img src="img/GALERIA6.jpg" class="gallery-img shadow-1-strong rounded mb-4"
+                        alt="La moda puede ser una fuerza para el bien" />
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Nos inspiramos en el océano y creemos que la moda puede ser una fuerza para el bien.
+                                #BacktotheOcean.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
 
-  
-          <!-- Redes sociales -->
-          <ul class="list-unstyled d-flex gap-2">
-            <li><i class="fab fa-facebook social-media-icon"></i></li>
-            <li><i class="fab fa-instagram social-media-icon"></i></li>
-            <li><i class="fas fa-envelope social-media-icon"></i></li>
-          </ul>
+        <!-- Carrusel de imágenes -->
+        <div id="galleryCarousel" class="carousel slide d-md-none" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Primer elemento del carrusel -->
+                <div class="carousel-item active">
+                    <img src="img/GALERIA7.webp" class="d-block w-100 gallery-img"
+                        alt="Trajes de baño ECO de alta gama">
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Trajes de baño ECO de alta gama</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Otros elementos del carrusel -->
+                <div class="carousel-item">
+                    <img src="img/galeria2.jpg" class="d-block w-100 gallery-img"
+                        alt="Creemos en la belleza de las cosas">
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Creemos en la belleza de las cosas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/GALERIA3.jpg" class="d-block w-100 gallery-img" alt="En palabras de M. Gandhi">
+                    <div class="overlay">
+                        <div class="text">
+                            <p>En palabras de M. Gandhi “No hay belleza en la tela más fina si produce hambre e
+                                infelicidad”.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/GALERIA4.jpg" class="d-block w-100 gallery-img"
+                        alt="Siempre estamos en busca de los mejores materiales">
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Siempre estamos en busca de los mejores materiales y los más ecológicos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/GALERIA5.jpg" class="d-block w-100 gallery-img"
+                        alt="Comprometidos a proteger lo que amamos">
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Somos buceadores, surfistas, aventureros del océano y estamos comprometidos a proteger lo
+                                que amamos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/GALERIA6.jpg" class="d-block w-100 gallery-img"
+                        alt="La moda puede ser una fuerza para el bien">
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Nos inspiramos en el océano y creemos que la moda puede ser una fuerza para el bien.
+                                #BacktotheOcean.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles del carrusel -->
+            <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-      </div>
-  
-      <!-- Copyright -->
-      <div class="text-center mt-5">
-        <span class="fw-bold">DEIÁ © 2024</span>
-      </div>
     </div>
-  </footer>
+
+
+
+    <!-- TIRA DE COLABORADORES  -->
+
+
+    <div class="container mb-5">
+        <div class="marquee" role="marquee">
+            <span class="marquee-content">
+                <span class="marquee-item marquee-text">As seen in</span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO1.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO2.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO3.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO4.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO5.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO6.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO7.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO8.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO9.png" alt="" class="theme-img">
+                </span>
+                <!-- Duplicamos los logos para una repetición continua -->
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO1.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO2.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO3.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO4.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO5.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO6.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO7.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO8.png" alt="" class="theme-img">
+                </span>
+                <span class="marquee-item marquee-image">
+                    <img src="img/LOGO9.png" alt="" class="theme-img">
+                </span>
+            </span>
+        </div>
+    </div>
+
+
+
+    <!-- FIN TIRA  -->
+
+    <!-- Footer -->
+    <footer class="bg-dark-blue mt-6 py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Sección de "Quiénes somos" -->
+                <div class="col-md-3">
+                    <p class="title mt-4 fw-bold">Quiénes somos</p>
+                    <p class="footer-link">Manifiesto</p>
+                    <p class="footer-link">Condiciones</p>
+                    <p class="footer-link">Política de privacidad</p>
+                </div>
+
+                <!-- Sección de "Cómo comprar" -->
+                <div class="col-md-3">
+                    <p class="title mt-4 fw-bold">Cómo comprar</p>
+                    <p class="footer-link">Preguntas frecuentes</p>
+                    <p class="footer-link">Envíos y devoluciones</p>
+                    <p class="footer-link">Tabla de tallas</p>
+                </div>
+
+                <!-- Sección de "Contáctanos" -->
+                <div class="col-md-3">
+                    <p class="title mt-4 fw-bold">Contáctanos</p>
+                    <p class="footer-link">Atención al cliente</p>
+                    <p class="footer-link">Wholesale</p>
+                    <p class="footer-link">Prensa y RRPP</p>
+                </div>
+
+                <!-- Sección de "Newsletter y Redes sociales" -->
+                <div class="col-md-3">
+                    <p>Suscríbete para descubrir nuevos lanzamientos y ofertas exclusivas. 10% de descuento en tu
+                        primera compra.</p>
+
+                    <!-- Botón que abre el modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        UNIRME
+                    </button>
+
+                    <!-- MODAL PRIEVBA  -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Redes sociales -->
+                    <ul class="list-unstyled d-flex gap-2">
+                        <li><i class="fab fa-facebook social-media-icon"></i></li>
+                        <li><i class="fab fa-instagram social-media-icon"></i></li>
+                        <li><i class="fas fa-envelope social-media-icon"></i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-5">
+                <span class="fw-bold">DEIÁ © 2024</span>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -447,13 +509,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
     <!-- AOS JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-<script>
-    // Inicializar AOS
-    AOS.init({
-        duration: 1000, // Duración de la animación en milisegundos
-    });
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        // Inicializar AOS
+        AOS.init({
+            duration: 1000, // Duración de la animación en milisegundos
+        });
+    </script>
 
 </body>
+
 </html>

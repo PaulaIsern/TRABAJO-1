@@ -15,8 +15,6 @@ document.querySelectorAll('.hover-link').forEach((item) => {
 // menu
 
 
-
-
 // Selecciona el botón de la hamburguesa y el contenido a ocultar
 const navbarToggle = document.querySelector('.navbar-toggler');
 const contentToHide = document.getElementById('contentToHide');
@@ -41,6 +39,7 @@ document.addEventListener('click', (event) => {
         contentToHide.style.display = 'block';
     }
 });
+
 
 // AINMACION DE LOS NUMEROS
 
