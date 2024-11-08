@@ -40,3 +40,11 @@ function toggleSearchBar() {
         easing: 'ease',  // Efecto de aceleración de la animación
         once: true,      // La animación solo se activa una vez
     });
+
+
+    // boton de guardar con mensaje
+    // Mensaje gracias footer
+document.getElementById("saveButton").addEventListener("click", function () {
+  const thankYouMessage = document.getElementById("thankYouMessage");
+  thankYouMessage.classList.remove("d-none"); // Muestra el mensaje
+});

@@ -101,6 +101,7 @@ body {
 
 /* Menu texto */
 
+
 .menu-content {
     color: #d3e4f5;
 }
@@ -213,14 +214,6 @@ h1 {
     z-index: 1030;
 }
 
-/* Pequeño (sm) */
-@media (min-width: 576px) {
-    .header-top {
-        position: fixed;
-    }
-}
-
-
 /* Estilo personalizado del modal */
 
 .custom-modal {
@@ -244,6 +237,7 @@ h1 {
     font-size: 1.5rem;
     font-weight: bold;
     color: #2e50a0;
+    margin-top: 3px;
 }
 
 /* Texto debajo del título */
@@ -252,10 +246,23 @@ h1 {
     color: #2e50a0;
 }
 
+/* Pequeño (sm) */
+@media (min-width: 576px) {
+    .header-top {
+        position: fixed;
+    }
+}
+
+
+.btn-primary2 {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
 
 /* Botón de cerrar */
 .custom-close-btn {
-    background-color: #2e50a0;
+    background-color: #2e50a0!important;
     border: none;
     border-radius: 20px;
     padding: 8px 30px;
@@ -263,6 +270,18 @@ h1 {
     font-size: 1rem;
     font-weight: bold;
     margin-top: 20px;
+}
+.btn {
+   
+    color: #e9ecef !important;
+}
+.btn-secondary {
+    background-color: #243f7b;
+
+}
+.btn-primary2 {
+    background-color: #243f7b;
+
 }
 
 .custom-close-btn:hover {

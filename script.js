@@ -91,3 +91,10 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 });
+
+
+// Mensaje gracias footer
+document.getElementById("saveButton").addEventListener("click", function () {
+  const thankYouMessage = document.getElementById("thankYouMessage");
+  thankYouMessage.classList.remove("d-none"); // Muestra el mensaje
+});

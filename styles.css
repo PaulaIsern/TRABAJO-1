@@ -76,8 +76,66 @@ h2.text-white {
 /* FIN STYLES HOVER  */
 
 
+/* Estilo personalizado del modal */
+.btn {
+    background-color: #3c4f99;
+    color: #e9ecef !important;
+}
+.btn-secondary {
+    --bs-btn-color: #fff !important;
+    border: none !important;
+    color: #000000 !important;
+    color: #e9ecef !important;
+    font-size: 17px !important;
+   
+}
+.custom-modal {
+    background-color: #e0f0ff;
+    border-radius: 15px;
+    padding: 20px;
+}
 
+.btn-secondary {
+    border: none;
+    color: #000000;
+    /* font-size: 1.5rem; */
+}
 
+.modal-body {
+    color: #2e50a0;
+    /* Color de texto azul oscuro */
+}
+
+/* Ícono de check centrado */
+.check-icon svg {
+    color: #2e50a0;
+}
+
+/* Título en el modal */
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2e50a0;
+    margin-top: 3px;
+}
+
+/* Texto debajo del título */
+.modal-body p {
+    font-size: 1rem;
+    color: #2e50a0;
+}
+
+/* Personaliza el ícono del botón de cierre */
+.btn-secondary{
+    border: none; /* Elimina bordes */
+    color: #000000; 
+    font-size: 1.5rem; 
+}
+
+/* Cambia el color al hacer hover */
+.btn-close:hover {
+    color: #000000; /* Cambia el color cuando se pasa el cursor */
+}
 
 ul {
     margin: 0;
@@ -182,6 +240,7 @@ a:hover {
 }
 
 
+
 /* estilos primer texto deia  */
 
 .custom-height {
@@ -206,6 +265,13 @@ a:hover {
         align-items: center;
         justify-content: center;
     }
+
+
+
+
+
+
+
 }
 
 
