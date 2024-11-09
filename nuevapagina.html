@@ -436,11 +436,10 @@
 
 
 
-        <!-- CARROUSEL NUEVO -->
         <!-- Galería de imágenes -->
         <div id="imageGallery" class="row py-4">
                        <div class="col-12 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
-                <img src="img/nuevapagina_IIMG_7284.PNG" class="img-fluid w-100 w-lg-75" alt="Aqua">
+                <img src="img/nuevapagina_IIMG_7284.PNG" class="img-fluid w-100 w-md-50 w-lg-75" alt="Aqua">
             </div>
             
         </div>
@@ -542,6 +541,26 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content custom-modal">
+                    <div class="modal-header border-0 justify-content-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="check-icon">
+                            <i class="far fa-check-circle" style=" font-size: 9em;"></i>
+                        </div>
+                        <h5 class="modal-title mt-3">OPERACIÓN EXITOSA</h5>
+                        <p class="title">Agregado al carrito</p>
+                        <button type="button" class="btn btn-primary custom-close-btn"
+                            data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Bootstrap JS, and jQuery -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

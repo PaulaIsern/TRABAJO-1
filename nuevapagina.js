@@ -36,9 +36,9 @@ function toggleSearchBar() {
 // carrousel nuevo, primero
 
     AOS.init({
-        duration: 1000,  // Duración de la animación
-        easing: 'ease',  // Efecto de aceleración de la animación
-        once: true,      // La animación solo se activa una vez
+        duration: 1000,  
+        easing: 'ease',  
+        once: true,      
     });
 
 

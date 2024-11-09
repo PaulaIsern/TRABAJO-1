@@ -76,7 +76,7 @@ counters.forEach(counter => {
   
 
 // FOOTER 
-
+ 
 //add to cart
 document.addEventListener('DOMContentLoaded', () => {
   // Selecciona todos los botones "Add to cart"
