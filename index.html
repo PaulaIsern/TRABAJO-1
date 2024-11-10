@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Desplegable</title>
+    <title>DeiaBikinis</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/deialogoenazul.png" type="image/x-icon">
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -385,7 +388,8 @@
     <!-- FIN TIRA  -->
 
        <!-- FOOTER -->
-       <footer class="bg-dark-blue mt-6 py-5">
+      <!-- FOOTER -->
+     <footer class="bg-white mt-6 py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -394,12 +398,14 @@
                     <p class="footer-link">Condiciones</p>
                     <p class="footer-link">Política de privacidad</p>
                 </div>
+
                 <div class="col-md-3">
                     <p class="title mt-4 fw-bold">Cómo comprar</p>
                     <p class="footer-link">Preguntas frecuentes</p>
                     <p class="footer-link">Envíos y devoluciones</p>
                     <p class="footer-link">Tabla de tallas</p>
                 </div>
+
                 <div class="col-md-3">
                     <p class="title mt-4 fw-bold">Contáctanos</p>
                     <p class="footer-link">Atención al cliente</p>
@@ -407,31 +413,59 @@
                     <p class="footer-link">Prensa y RRPP</p>
                 </div>
 
-                <div class="text-center mt-5">
-                    <span class="fw-bold">DEIÁ © 2024</span>
-                </div>
+                <div class="col-md-3">
+                    <p>Suscríbete para descubrir nuevos lanzamientos y ofertas exclusivas. 10% de descuento en tu
+                        primera compra.</p>
+
+                    <button type="button" class="btn btn-unirme" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        UNIRME
+                    </button>
+
+                
+
+<!-- MODAL -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title fs-5" id="exampleModalLabel">Gracias por unirte y ser parte del cambio</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Déjanos tu correo para enterarte de todas las novedades:</p>
+            <div id="thankYouMessage" class="alert alert-success d-none mt-3" role="alert">
+                ¡Gracias por unirte!
+            </div>
+            <div class="mb-3">
+                <label for="emailInput" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="nombre@ejemplo.com">
             </div>
         </div>
-    </footer>
-
-    <!-- MODAL -->
-    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content custom-modal">
-                <div class="modal-header border-0 justify-content-end">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <div class="check-icon">
-                        <i class="far fa-check-circle" style="font-size: 9em;"></i>
-                    </div>
-                    <h5 class="modal-title mt-3">OPERACIÓN EXITOSA</h5>
-                    <p class="title">Agregado al carrito</p>
-                    <button type="button" class="btn btn-primary custom-close-btn" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary2" id="saveButton">Guardar</button>
         </div>
     </div>
+</div>
+</div>
+
+
+
+<ul class="list-unstyled d-flex gap-2">
+   <li><i class="fab fa-facebook social-media-icon"></i></li>
+     <li><i class="fab fa-instagram social-media-icon"></i></li>
+           <li><i class="fas fa-envelope social-media-icon"></i></li>
+          </ul>
+          </div>
+            </div>
+
+<div class="text-center mt-5">
+ <span class="fw-bold">DEIÁ © 2024</span>
+    </div>
+    </div>
+    </footer>
+
     <!-- FIN MODAL -->
 
     

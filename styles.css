@@ -75,6 +75,21 @@ h2.text-white {
     background-color: #3c4f99;
     color: #e9ecef !important;
 }
+
+.btn-close {
+    position: absolute;
+    top: 1rem; /* Ajusta el valor según necesites */
+    right: 1rem; /* Ajusta el valor según necesites */
+    font-size: 1.5rem !important;
+    color: #000 !important; 
+    opacity: 1 !important;
+    z-index: 1050; 
+    background-color: transparent; 
+    border: none !important;
+    cursor: pointer;
+}
+
+
 .btn-secondary {
     --bs-btn-color: #fff !important;
     border: none !important;
@@ -118,6 +133,10 @@ h2.text-white {
     border: none; 
     color: #000000; 
     font-size: 1.5rem; 
+}
+
+.bg-white {
+    background-color: #001f3f !important;
 }
 
 .btn-close:hover {
