@@ -1,27 +1,20 @@
 
 
-
-// Selecciona el botón de la hamburguesa y el contenido a ocultar
+// MENU
 const navbarToggle = document.querySelector('.navbar-toggler');
 const contentToHide = document.getElementById('contentToHide');
 
-// Al hacer clic en el botón de la hamburguesa
 navbarToggle.addEventListener('click', () => {
-    // Verifica si el menú está abierto
     if (navbarToggle.getAttribute('aria-expanded') === 'true') {
-        // Si está abierto, oculta el contenido
         contentToHide.style.display = 'none';
     } else {
-        // Si está cerrado, muestra el contenido
         contentToHide.style.display = 'block';
     }
 });
 
-// Opcional: Asegurarse de que el contenido esté visible al cerrar el menú
 document.addEventListener('click', (event) => {
     const target = event.target;
     if (!navbarToggle.contains(target) && !document.getElementById('navbarToggleExternalContent').contains(target)) {
-        // Cuando se hace clic fuera del menú, muestra el contenido
         contentToHide.style.display = 'block';
     }
 });
@@ -33,7 +26,7 @@ function toggleSearchBar() {
     searchInput.focus();
 }
 
-// carrousel nuevo, primero
+// CARRUSSEL NUEVO PRIMERO
 
     AOS.init({
         duration: 1000,  
@@ -42,9 +35,8 @@ function toggleSearchBar() {
     });
 
 
-    // boton de guardar con mensaje
-    // Mensaje gracias footer
+    //  BOTON GUARDAR CON MENSAJE
 document.getElementById("saveButton").addEventListener("click", function () {
   const thankYouMessage = document.getElementById("thankYouMessage");
-  thankYouMessage.classList.remove("d-none"); // Muestra el mensaje
+  thankYouMessage.classList.remove("d-none"); 
 });

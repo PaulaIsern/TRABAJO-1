@@ -12,30 +12,23 @@ document.querySelectorAll('.hover-link').forEach((item) => {
 });
 
 
-// menu
+// MENU
 
 
-// Selecciona el botón de la hamburguesa y el contenido a ocultar
 const navbarToggle = document.querySelector('.navbar-toggler');
 const contentToHide = document.getElementById('contentToHide');
 
-// Al hacer clic en el botón de la hamburguesa
 navbarToggle.addEventListener('click', () => {
-    // Verifica si el menú está abierto
     if (navbarToggle.getAttribute('aria-expanded') === 'true') {
-        // Si está abierto, oculta el contenido
         contentToHide.style.display = 'none';
     } else {
-        // Si está cerrado, muestra el contenido
         contentToHide.style.display = 'block';
     }
 });
 
-// Opcional: Asegurarse de que el contenido esté visible al cerrar el menú
 document.addEventListener('click', (event) => {
     const target = event.target;
     if (!navbarToggle.contains(target) && !document.getElementById('navbarToggleExternalContent').contains(target)) {
-        // Cuando se hace clic fuera del menú, muestra el contenido
         contentToHide.style.display = 'block';
     }
 });
@@ -44,7 +37,7 @@ document.addEventListener('click', (event) => {
 // AINMACION DE LOS NUMEROS
 
 const counters = document.querySelectorAll('.counter');
-const speed = 100; // Velocidad de la animación
+const speed = 100;
 
 counters.forEach(counter => {
   const updateCount = () => {
@@ -60,12 +53,11 @@ counters.forEach(counter => {
     }
   };
 
-  // IntersectionObserver para que la animación comience al hacer scroll
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         updateCount();
-        observer.unobserve(counter); // Detiene la observación cuando comienza la animación
+        observer.unobserve(counter); 
       }
     });
   });
@@ -77,23 +69,20 @@ counters.forEach(counter => {
 
 // FOOTER 
  
-//add to cart
 document.addEventListener('DOMContentLoaded', () => {
-  // Selecciona todos los botones "Add to cart"
   const addToCartButtons = document.querySelectorAll('.add-to-cart');
   const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
 
-  // Añade el evento de clic a cada botón
   addToCartButtons.forEach(button => {
       button.addEventListener('click', (event) => {
-          event.preventDefault(); // Evita el comportamiento por defecto del enlace
-          cartModal.show(); // Muestra el modal
+          event.preventDefault(); 
+          cartModal.show(); 
       });
   });
 });
 
 
-// Mensaje gracias footer
+// GRACIAS
 document.getElementById("saveButton").addEventListener("click", function () {
   const thankYouMessage = document.getElementById("thankYouMessage");
   thankYouMessage.classList.remove("d-none"); // Muestra el mensaje
